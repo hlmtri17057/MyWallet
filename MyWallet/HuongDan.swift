@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HuongDan.swift
 //  MyWallet
 //
 //  Created by cuscedu on 9/1/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HuongDan: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

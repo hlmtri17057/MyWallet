@@ -13,7 +13,6 @@
 		8A0687F61F46EBD500879EBE /* view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0687F51F46EBD500879EBE /* view.swift */; };
 		8A0687F81F4C2C3900879EBE /* MessageDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0687F71F4C2C3900879EBE /* MessageDK.swift */; };
 		8A0952C51F45956800A2F696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0952C41F45956800A2F696 /* AppDelegate.swift */; };
-		8A0952C71F45956800A2F696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0952C61F45956800A2F696 /* ViewController.swift */; };
 		8A0952CA1F45956800A2F696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0952C81F45956800A2F696 /* Main.storyboard */; };
 		8A0952CC1F45956800A2F696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0952CB1F45956800A2F696 /* Assets.xcassets */; };
 		8A0952CF1F45956800A2F696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0952CD1F45956800A2F696 /* LaunchScreen.storyboard */; };
@@ -34,6 +33,9 @@
 		8A815B151F53D38D004D7627 /* ThemKhoanThu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A815B141F53D38D004D7627 /* ThemKhoanThu.swift */; };
 		8A815B171F53D3AC004D7627 /* ThemKhoanChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A815B161F53D3AC004D7627 /* ThemKhoanChi.swift */; };
 		8A8328181F57F18800E0C3D9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8328171F57F18800E0C3D9 /* TableViewCell.swift */; };
+		8ADD38791F5966230045A1D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD38781F5966230045A1D0 /* ViewController.swift */; };
+		8ADD387B1F59664B0045A1D0 /* HuongDan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD387A1F59664B0045A1D0 /* HuongDan.swift */; };
+		8ADD387D1F5966D10045A1D0 /* nen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ADD387C1F5966D10045A1D0 /* nen.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +63,6 @@
 		8A0687F71F4C2C3900879EBE /* MessageDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDK.swift; sourceTree = "<group>"; };
 		8A0952C11F45956700A2F696 /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0952C41F45956800A2F696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A0952C61F45956800A2F696 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A0952C91F45956800A2F696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A0952CB1F45956800A2F696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A0952CE1F45956800A2F696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +88,9 @@
 		8A815B141F53D38D004D7627 /* ThemKhoanThu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemKhoanThu.swift; sourceTree = "<group>"; };
 		8A815B161F53D3AC004D7627 /* ThemKhoanChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemKhoanChi.swift; sourceTree = "<group>"; };
 		8A8328171F57F18800E0C3D9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8ADD38781F5966230045A1D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8ADD387A1F59664B0045A1D0 /* HuongDan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuongDan.swift; sourceTree = "<group>"; };
+		8ADD387C1F5966D10045A1D0 /* nen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nen.jpg; path = ../../../Downloads/nen.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +143,6 @@
 			children = (
 				8A0952F21F4599E200A2F696 /* support */,
 				8A0952C41F45956800A2F696 /* AppDelegate.swift */,
-				8A0952C61F45956800A2F696 /* ViewController.swift */,
 				8A0687F31F46EA0E00879EBE /* DangKy.swift */,
 				8A0687F71F4C2C3900879EBE /* MessageDK.swift */,
 				8A0952FC1F459DFA00A2F696 /* DangNhap.swift */,
@@ -155,6 +158,8 @@
 				8A0952F91F459D9D00A2F696 /* images */,
 				8A0952CD1F45956800A2F696 /* LaunchScreen.storyboard */,
 				8A0952D01F45956800A2F696 /* Info.plist */,
+				8ADD38781F5966230045A1D0 /* ViewController.swift */,
+				8ADD387A1F59664B0045A1D0 /* HuongDan.swift */,
 			);
 			path = MyWallet;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 		8A0952F91F459D9D00A2F696 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8ADD387C1F5966D10045A1D0 /* nen.jpg */,
 				8A771C9D1F580FA2007BEEDF /* icon5d_back.png */,
 				8A771C9F1F580FB5007BEEDF /* icon5d_next.png */,
 				8A815AD81F4FDD9C004D7627 /* icon4.jpg */,
@@ -311,6 +317,7 @@
 				8A771C9E1F580FA2007BEEDF /* icon5d_back.png in Resources */,
 				8A815AD91F4FDD9C004D7627 /* icon4.jpg in Resources */,
 				8A0952CC1F45956800A2F696 /* Assets.xcassets in Resources */,
+				8ADD387D1F5966D10045A1D0 /* nen.jpg in Resources */,
 				8A0952CA1F45956800A2F696 /* Main.storyboard in Resources */,
 				8A771C9C1F5803D5007BEEDF /* icon6.png in Resources */,
 			);
@@ -340,13 +347,14 @@
 				8A8328181F57F18800E0C3D9 /* TableViewCell.swift in Sources */,
 				8A0687F01F469DC800879EBE /* Password.swift in Sources */,
 				8A0952FD1F459DFA00A2F696 /* DangNhap.swift in Sources */,
-				8A0952C71F45956800A2F696 /* ViewController.swift in Sources */,
 				8A0687F61F46EBD500879EBE /* view.swift in Sources */,
 				8A0687F41F46EA0E00879EBE /* DangKy.swift in Sources */,
 				8A0952F41F459BF600A2F696 /* imageview.swift in Sources */,
 				8A0952C51F45956800A2F696 /* AppDelegate.swift in Sources */,
+				8ADD387B1F59664B0045A1D0 /* HuongDan.swift in Sources */,
 				8A771CA21F58F30F007BEEDF /* ThongKe.swift in Sources */,
 				8A815B151F53D38D004D7627 /* ThemKhoanThu.swift in Sources */,
+				8ADD38791F5966230045A1D0 /* ViewController.swift in Sources */,
 				8A0952F81F459CBC00A2F696 /* label.swift in Sources */,
 				8A0952F61F459C9300A2F696 /* button.swift in Sources */,
 				8A0687EE1F469CC500879EBE /* Home.swift in Sources */,

@@ -53,16 +53,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyWallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ED-Wt-c8v" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                        <rect key="frame" x="54" y="0.0" width="132" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="NA4-Vn-5wq"/>
-                                            <constraint firstAttribute="width" constant="132" id="axE-vH-gWc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" red="1" green="0.32122366089999999" blue="0.3520796055" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bij-7p-3uE">
                                         <rect key="frame" x="35" y="53" width="170" height="95"/>
                                         <constraints>
@@ -96,6 +86,16 @@
                                             <segue destination="r9d-GW-V2B" kind="show" id="yR9-Eg-6Fx"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyWallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ED-Wt-c8v" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="132" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NA4-Vn-5wq"/>
+                                            <constraint firstAttribute="width" constant="132" id="axE-vH-gWc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.32122366089999999" blue="0.3520796055" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="3V3-LU-EIh"/>
@@ -432,26 +432,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQI-Y2-ZLf" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="320" width="260" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="Bng-t6-1ZY"/>
-                                    <constraint firstAttribute="height" constant="35" id="drK-un-aOk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="HƯỚNG DẪN"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7U-G7-vw5" customClass="button" customModule="MyWallet" customModuleProvider="target">
                                 <rect key="frame" x="170" y="365" width="260" height="35"/>
                                 <constraints>
@@ -506,6 +486,29 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="VfB-MF-3AI" kind="presentation" modalTransitionStyle="flipHorizontal" id="lSK-B7-Kcy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQI-Y2-ZLf" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="170" y="320" width="260" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="Bng-t6-1ZY"/>
+                                    <constraint firstAttribute="height" constant="35" id="drK-un-aOk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="HƯỚNG DẪN"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="aev-rl-Eeb" kind="show" id="a7z-k4-cJn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -824,13 +827,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKs-v8-l8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="908"/>
+            <point key="canvasLocation" x="189" y="1174"/>
+        </scene>
+        <!--Huong Dan-->
+        <scene sceneID="yB9-5r-vFA">
+            <objects>
+                <viewController id="aev-rl-Eeb" customClass="HuongDan" customModule="MyWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Uu-d1-otk"/>
+                        <viewControllerLayoutGuide type="bottom" id="XZY-Xd-pIZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gux-Tn-id8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5bC-nA-EWv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XZY-Xd-pIZ" firstAttribute="top" secondItem="5bC-nA-EWv" secondAttribute="bottom" id="7Hu-zU-VWU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5bC-nA-EWv" secondAttribute="trailing" constant="-20" id="MYK-Bx-9zi"/>
+                            <constraint firstItem="5bC-nA-EWv" firstAttribute="leading" secondItem="Gux-Tn-id8" secondAttribute="leadingMargin" constant="-20" id="fxh-tH-aeg"/>
+                            <constraint firstItem="5bC-nA-EWv" firstAttribute="top" secondItem="Gux-Tn-id8" secondAttribute="topMargin" id="tUU-ey-Nb3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPi-5I-iEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="350"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon3.jpg" width="347" height="346"/>
         <image name="icon4.jpg" width="225" height="225"/>
         <image name="icon5d_back.png" width="450" height="225"/>
+        <image name="nen.jpg" width="840" height="1152"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cZ4-5S-IfI"/>
