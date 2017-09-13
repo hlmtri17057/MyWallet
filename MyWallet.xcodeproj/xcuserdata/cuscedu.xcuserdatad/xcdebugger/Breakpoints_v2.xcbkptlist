@@ -19,5 +19,132 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWallet/ThongKe.swift"
+            timestampString = "526361245.594358"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "ThongKe"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.ThongKe.deleteRowAtIndex (Swift.Int) -&gt; ()"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/ThongKe.swift"
+                  timestampString = "526814942.942099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for MyWallet.TableViewCellDelegate.deleteRowAtIndex (Swift.Int) -&gt; () in conformance MyWallet.ThongKe : MyWallet.TableViewCellDelegate in MyWallet"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/ThongKe.swift"
+                  timestampString = "526814942.942212"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWallet/ThongKe.swift"
+            timestampString = "526360311.72949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWallet/CellThongKe.swift"
+            timestampString = "526360578.48014"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "CellThongKe"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.CellThongKe.__deallocating_deinit"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/CellThongKe.swift"
+                  timestampString = "526814942.943349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.CellThongKe.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; MyWallet.CellThongKe"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/CellThongKe.swift"
+                  timestampString = "526814942.943457"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.CellThongKe.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyWallet.CellThongKe&gt;"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/CellThongKe.swift"
+                  timestampString = "526814942.943549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -25,6 +25,7 @@
 		8A0952FB1F459DBF00A2F696 /* icon3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A0952FA1F459DBF00A2F696 /* icon3.jpg */; };
 		8A0952FD1F459DFA00A2F696 /* DangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0952FC1F459DFA00A2F696 /* DangNhap.swift */; };
 		8A0952FF1F45A45B00A2F696 /* textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0952FE1F45A45B00A2F696 /* textfield.swift */; };
+		8A71D4781F668E1A0036873E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A71D4771F668E1A0036873E /* Menu.swift */; };
 		8A771C9C1F5803D5007BEEDF /* icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A771C9B1F5803D5007BEEDF /* icon6.png */; };
 		8A771C9E1F580FA2007BEEDF /* icon5d_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A771C9D1F580FA2007BEEDF /* icon5d_back.png */; };
 		8A771CA01F580FB5007BEEDF /* icon5d_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A771C9F1F580FB5007BEEDF /* icon5d_next.png */; };
@@ -33,7 +34,7 @@
 		8A815AD91F4FDD9C004D7627 /* icon4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A815AD81F4FDD9C004D7627 /* icon4.jpg */; };
 		8A815B151F53D38D004D7627 /* ThemKhoanThu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A815B141F53D38D004D7627 /* ThemKhoanThu.swift */; };
 		8A815B171F53D3AC004D7627 /* ThemKhoanChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A815B161F53D3AC004D7627 /* ThemKhoanChi.swift */; };
-		8A8328181F57F18800E0C3D9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8328171F57F18800E0C3D9 /* TableViewCell.swift */; };
+		8AA0A7691F5E908F00C5183A /* Chi_tiet_Thongke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0A7681F5E908F00C5183A /* Chi_tiet_Thongke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		8A0952FA1F459DBF00A2F696 /* icon3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon3.jpg; sourceTree = "<group>"; };
 		8A0952FC1F459DFA00A2F696 /* DangNhap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DangNhap.swift; sourceTree = "<group>"; };
 		8A0952FE1F45A45B00A2F696 /* textfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textfield.swift; sourceTree = "<group>"; };
+		8A71D4771F668E1A0036873E /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		8A771C9B1F5803D5007BEEDF /* icon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon6.png; sourceTree = "<group>"; };
 		8A771C9D1F580FA2007BEEDF /* icon5d_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon5d_back.png; sourceTree = "<group>"; };
 		8A771C9F1F580FB5007BEEDF /* icon5d_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon5d_next.png; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 		8A815AD81F4FDD9C004D7627 /* icon4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon4.jpg; sourceTree = "<group>"; };
 		8A815B141F53D38D004D7627 /* ThemKhoanThu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemKhoanThu.swift; sourceTree = "<group>"; };
 		8A815B161F53D3AC004D7627 /* ThemKhoanChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemKhoanChi.swift; sourceTree = "<group>"; };
-		8A8328171F57F18800E0C3D9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8AA0A7681F5E908F00C5183A /* Chi_tiet_Thongke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chi_tiet_Thongke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,12 +146,13 @@
 				8A0687F71F4C2C3900879EBE /* MessageDK.swift */,
 				8A0952FC1F459DFA00A2F696 /* DangNhap.swift */,
 				8A0687ED1F469CC500879EBE /* Home.swift */,
-				8A8328171F57F18800E0C3D9 /* TableViewCell.swift */,
+				8A71D4771F668E1A0036873E /* Menu.swift */,
 				8A0687EF1F469DC800879EBE /* Password.swift */,
 				8A815B141F53D38D004D7627 /* ThemKhoanThu.swift */,
 				8A815B161F53D3AC004D7627 /* ThemKhoanChi.swift */,
-				8A771CA31F5919D2007BEEDF /* CellThongKe.swift */,
 				8A771CA11F58F30F007BEEDF /* ThongKe.swift */,
+				8A771CA31F5919D2007BEEDF /* CellThongKe.swift */,
+				8AA0A7681F5E908F00C5183A /* Chi_tiet_Thongke.swift */,
 				8A0952C81F45956800A2F696 /* Main.storyboard */,
 				8A0952CB1F45956800A2F696 /* Assets.xcassets */,
 				8A0952F91F459D9D00A2F696 /* images */,
@@ -337,13 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8328181F57F18800E0C3D9 /* TableViewCell.swift in Sources */,
 				8A0687F01F469DC800879EBE /* Password.swift in Sources */,
 				8A0952FD1F459DFA00A2F696 /* DangNhap.swift in Sources */,
 				8A0952C71F45956800A2F696 /* ViewController.swift in Sources */,
 				8A0687F61F46EBD500879EBE /* view.swift in Sources */,
 				8A0687F41F46EA0E00879EBE /* DangKy.swift in Sources */,
 				8A0952F41F459BF600A2F696 /* imageview.swift in Sources */,
+				8A71D4781F668E1A0036873E /* Menu.swift in Sources */,
 				8A0952C51F45956800A2F696 /* AppDelegate.swift in Sources */,
 				8A771CA21F58F30F007BEEDF /* ThongKe.swift in Sources */,
 				8A815B151F53D38D004D7627 /* ThemKhoanThu.swift in Sources */,
@@ -351,6 +354,7 @@
 				8A0952F61F459C9300A2F696 /* button.swift in Sources */,
 				8A0687EE1F469CC500879EBE /* Home.swift in Sources */,
 				8A771CA41F5919D2007BEEDF /* CellThongKe.swift in Sources */,
+				8AA0A7691F5E908F00C5183A /* Chi_tiet_Thongke.swift in Sources */,
 				8A0687F81F4C2C3900879EBE /* MessageDK.swift in Sources */,
 				8A815B171F53D3AC004D7627 /* ThemKhoanChi.swift in Sources */,
 				8A0952FF1F45A45B00A2F696 /* textfield.swift in Sources */,

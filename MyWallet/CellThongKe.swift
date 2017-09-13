@@ -8,8 +8,21 @@
 
 import UIKit
 
+protocol TableViewCellDelegate {
+    func deleteRowAtIndex(index:Int)
+}
+
+
 class CellThongKe: UITableViewCell {
 
+    @IBOutlet weak var lb_date: label!
+    @IBOutlet weak var lb_thu: label!
+    @IBOutlet weak var lb_chi: label!
+    @IBOutlet weak var lb_duthang: label!
+    
+    var index:NSIndexPath?
+    var delegate:TableViewCellDelegate?
+   // var delegate : UITableViewDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
