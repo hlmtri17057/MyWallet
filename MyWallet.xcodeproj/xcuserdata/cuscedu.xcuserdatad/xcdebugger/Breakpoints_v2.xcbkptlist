@@ -26,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWallet/ThongKe.swift"
-            timestampString = "526361245.594358"
+            timestampString = "526986488.973387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "ThongKe"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyWallet.ThongKe.deleteRowAtIndex (Swift.Int) -&gt; ()"
-                  moduleName = "MyWallet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/ThongKe.swift"
-                  timestampString = "526814942.942099"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "protocol witness for MyWallet.TableViewCellDelegate.deleteRowAtIndex (Swift.Int) -&gt; () in conformance MyWallet.ThongKe : MyWallet.TableViewCellDelegate in MyWallet"
-                  moduleName = "MyWallet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/ThongKe.swift"
-                  timestampString = "526814942.942212"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWallet/ThongKe.swift"
-            timestampString = "526360311.72949"
+            timestampString = "526986488.973387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -105,8 +73,8 @@
                   symbolName = "MyWallet.CellThongKe.__deallocating_deinit"
                   moduleName = "MyWallet"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/CellThongKe.swift"
-                  timestampString = "526814942.943349"
+                  urlString = "file:///Users/cuscedu/Desktop/github/MyWallet/MyWallet/CellThongKe.swift"
+                  timestampString = "526986229.397473"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -120,8 +88,8 @@
                   symbolName = "MyWallet.CellThongKe.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; MyWallet.CellThongKe"
                   moduleName = "MyWallet"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/CellThongKe.swift"
-                  timestampString = "526814942.943457"
+                  urlString = "file:///Users/cuscedu/Desktop/github/MyWallet/MyWallet/CellThongKe.swift"
+                  timestampString = "526986229.398007"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -135,8 +103,8 @@
                   symbolName = "MyWallet.CellThongKe.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyWallet.CellThongKe&gt;"
                   moduleName = "MyWallet"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuscedu/Desktop/MyWallet/MyWallet/MyWallet/CellThongKe.swift"
-                  timestampString = "526814942.943549"
+                  urlString = "file:///Users/cuscedu/Desktop/github/MyWallet/MyWallet/CellThongKe.swift"
+                  timestampString = "526986229.398367"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"

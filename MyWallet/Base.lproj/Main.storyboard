@@ -243,6 +243,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="7T9-zc-hwi" kind="presentation" id="n9U-yg-93i"/>
+                                </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wzT-fg-WKB">
                                 <rect key="frame" x="260" y="66" width="94" height="29"/>
@@ -272,26 +275,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpW-ds-QSv" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="450" y="501" width="130" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="Pmi-ED-dpw"/>
-                                    <constraint firstAttribute="height" constant="30" id="aRb-Gr-Mhs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <state key="normal" title="THÊM KHOẢN CHI"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHZ-RC-yOd" customClass="label" customModule="MyWallet" customModuleProvider="target">
                                 <rect key="frame" x="20" y="103" width="130" height="30"/>
                                 <constraints>
@@ -317,6 +300,29 @@
                                     <constraint firstAttribute="height" constant="250" id="bhd-PJ-NY9"/>
                                 </constraints>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpW-ds-QSv" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="450" y="501" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Pmi-ED-dpw"/>
+                                    <constraint firstAttribute="height" constant="30" id="aRb-Gr-Mhs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="THÊM KHOẢN CHI"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="9kD-ne-EOr" kind="presentation" id="UOG-KM-LRq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -676,8 +682,8 @@
                                     <action selector="Tap_backbutton:" destination="VfB-MF-3AI" eventType="touchUpInside" id="Cbz-yF-StW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SỐ DƯ TỔNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFN-vG-s7O" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="330" y="58" width="250" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SỐ DƯ TỔNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFN-vG-s7O" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="330" y="60" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="3Bi-69-exp"/>
                                     <constraint firstAttribute="height" constant="30" id="xF2-2t-Rad"/>
@@ -718,21 +724,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lt6-rj-gsJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lt6-rj-gsJ">
                                 <rect key="frame" x="20" y="110" width="560" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellThongKe" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellThongKe" rowHeight="70" id="BUC-Ff-hz9" userLabel="CellThongKe" customClass="CellThongKe" customModule="MyWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="70"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellThongKe" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellThongKe" rowHeight="88" id="BUC-Ff-hz9" userLabel="CellThongKe" customClass="CellThongKe" customModule="MyWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BUC-Ff-hz9" id="lSL-Qu-SWS">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUD-0M-6Ao" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                                    <rect key="frame" x="113" y="13" width="100" height="30"/>
+                                                    <rect key="frame" x="13" y="48" width="130" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="BDD-Lg-MX2"/>
+                                                        <constraint firstAttribute="width" constant="130" id="BDD-Lg-MX2"/>
                                                         <constraint firstAttribute="height" constant="30" id="uax-dB-jP2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
@@ -747,29 +753,11 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bu-kd-aEQ" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                                    <rect key="frame" x="213" y="13" width="100" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="Agi-SU-6u8"/>
-                                                        <constraint firstAttribute="height" constant="30" id="WPK-b1-poI"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="1"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DƯ THÁNG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-lm-Fgt" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                                    <rect key="frame" x="313" y="13" width="100" height="30"/>
+                                                    <rect key="frame" x="417" y="13" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="TvR-lH-0mg"/>
-                                                        <constraint firstAttribute="width" constant="100" id="wsU-9O-NTn"/>
+                                                        <constraint firstAttribute="width" constant="130" id="wsU-9O-NTn"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -784,9 +772,9 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq0-tv-AYk" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                                    <rect key="frame" x="13" y="13" width="100" height="30"/>
+                                                    <rect key="frame" x="13" y="13" width="130" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="LYf-1P-gg4"/>
+                                                        <constraint firstAttribute="width" constant="130" id="LYf-1P-gg4"/>
                                                         <constraint firstAttribute="height" constant="30" id="s1d-QA-226"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
@@ -801,16 +789,34 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bu-kd-aEQ" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="417" y="48" width="130" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="Agi-SU-6u8"/>
+                                                        <constraint firstAttribute="height" constant="30" id="WPK-b1-poI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3Bu-kd-aEQ" firstAttribute="top" secondItem="lSL-Qu-SWS" secondAttribute="topMargin" constant="5" id="0wO-Ou-oNH"/>
-                                                <constraint firstItem="Nq0-tv-AYk" firstAttribute="leading" secondItem="lSL-Qu-SWS" secondAttribute="leadingMargin" constant="5" id="9SB-qf-ftI"/>
-                                                <constraint firstItem="rxV-lm-Fgt" firstAttribute="leading" secondItem="3Bu-kd-aEQ" secondAttribute="trailing" id="See-fx-8Lz"/>
-                                                <constraint firstItem="mUD-0M-6Ao" firstAttribute="top" secondItem="lSL-Qu-SWS" secondAttribute="topMargin" constant="5" id="VCP-Od-b2A"/>
-                                                <constraint firstItem="3Bu-kd-aEQ" firstAttribute="leading" secondItem="mUD-0M-6Ao" secondAttribute="trailing" id="eJO-4d-4Xi"/>
+                                                <constraint firstItem="Nq0-tv-AYk" firstAttribute="leading" secondItem="lSL-Qu-SWS" secondAttribute="leadingMargin" constant="5" id="9CE-qb-V2J"/>
+                                                <constraint firstItem="mUD-0M-6Ao" firstAttribute="leading" secondItem="lSL-Qu-SWS" secondAttribute="leadingMargin" constant="5" id="KlX-ua-kRS"/>
+                                                <constraint firstItem="3Bu-kd-aEQ" firstAttribute="top" secondItem="rxV-lm-Fgt" secondAttribute="bottom" constant="5" id="R3J-d8-PVC"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rxV-lm-Fgt" secondAttribute="trailing" constant="5" id="UIQ-Gt-2Sq"/>
+                                                <constraint firstItem="mUD-0M-6Ao" firstAttribute="top" secondItem="Nq0-tv-AYk" secondAttribute="bottom" constant="5" id="bJ6-kG-HmD"/>
                                                 <constraint firstItem="Nq0-tv-AYk" firstAttribute="top" secondItem="lSL-Qu-SWS" secondAttribute="topMargin" constant="5" id="gU5-kB-jrG"/>
                                                 <constraint firstItem="rxV-lm-Fgt" firstAttribute="top" secondItem="lSL-Qu-SWS" secondAttribute="topMargin" constant="5" id="q17-zM-uQ6"/>
-                                                <constraint firstItem="mUD-0M-6Ao" firstAttribute="leading" secondItem="Nq0-tv-AYk" secondAttribute="trailing" id="qIr-3R-aRK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3Bu-kd-aEQ" secondAttribute="trailing" constant="5" id="yiH-e0-A72"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -848,6 +854,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKs-v8-l8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="177" y="802"/>
+        </scene>
+        <!--Them Khoan Chi-->
+        <scene sceneID="dAK-bS-wT6">
+            <objects>
+                <viewController id="9kD-ne-EOr" customClass="ThemKhoanChi" customModule="MyWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ljn-ve-u13"/>
+                        <viewControllerLayoutGuide type="bottom" id="t8Q-8k-3Jo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PQV-vK-Gdq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM KHOẢN CHI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-og-r6w" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="217" y="50" width="166" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aq4-SX-YpD"/>
+                                    <constraint firstAttribute="width" constant="166" id="dZs-Au-akM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zBI-og-r6w" firstAttribute="top" secondItem="PQV-vK-Gdq" secondAttribute="topMargin" constant="50" id="BQh-qa-ksG"/>
+                            <constraint firstItem="zBI-og-r6w" firstAttribute="centerX" secondItem="PQV-vK-Gdq" secondAttribute="centerX" id="YAS-Dh-0vx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sk-gc-m2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="1848"/>
+        </scene>
+        <!--Them Khoan Thu-->
+        <scene sceneID="mxD-TS-Ylh">
+            <objects>
+                <viewController id="7T9-zc-hwi" customClass="ThemKhoanThu" customModule="MyWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fCw-6Y-H5M"/>
+                        <viewControllerLayoutGuide type="bottom" id="XLF-mN-jZW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xMZ-ED-wkB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWj-Fo-cCM">
+                                <rect key="frame" x="20" y="25" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="GoG-Ty-r8m"/>
+                                    <constraint firstAttribute="width" constant="50" id="sAD-ef-ujd"/>
+                                </constraints>
+                                <state key="normal" title="ButtonBack" image="icon5d_back.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM KHOẢN THU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laH-lc-Q73" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="200" y="25" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="WXK-cS-zNM"/>
+                                    <constraint firstAttribute="width" constant="200" id="qhh-yb-mWT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="laH-lc-Q73" firstAttribute="centerX" secondItem="xMZ-ED-wkB" secondAttribute="centerX" id="Ee4-S5-0vs"/>
+                            <constraint firstItem="laH-lc-Q73" firstAttribute="top" secondItem="xMZ-ED-wkB" secondAttribute="topMargin" constant="25" id="Mpx-uu-1hZ"/>
+                            <constraint firstItem="QWj-Fo-cCM" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="PNz-fh-Ac0"/>
+                            <constraint firstItem="QWj-Fo-cCM" firstAttribute="top" secondItem="xMZ-ED-wkB" secondAttribute="topMargin" constant="25" id="T6c-h5-h9G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNF-I0-09w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1128" y="1848"/>
         </scene>
         <!--Chi tiet Thongke-->
         <scene sceneID="MfB-AB-wiE">
@@ -1048,7 +1132,7 @@
         <image name="icon5d_back.png" width="450" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9Vy-69-mbK"/>
         <segue reference="cZ4-5S-IfI"/>
-        <segue reference="PT2-hM-Jxg"/>
     </inferredMetricsTieBreakers>
 </document>

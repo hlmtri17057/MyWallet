@@ -44,10 +44,14 @@ class ThongKe: UIViewController , UITableViewDelegate, UITableViewDataSource, Ta
         
         let cell = tableView.dequeueReusableCellWithIdentifier("CellThongKe") as! CellThongKe
         
-        cell.lb_chi.text = s1data[indexPath.row]
+        /*cell.lb_chi.text = s1data[indexPath.row]
         cell.lb_date.text = s1data[indexPath.row]
         cell.lb_duthang.text = s1data[indexPath.row]
-        cell.lb_thu.text = s1data[indexPath.row]
+        cell.lb_thu.text = s1data[indexPath.row]*/
+        cell.lb_thu.text = "thu"
+        cell.lb_duthang.text = "du thang"
+        cell.lb_date.text = "date"
+        cell.lb_chi.text = "chi"
     
         cell.delegate = self
         cell.index = indexPath
