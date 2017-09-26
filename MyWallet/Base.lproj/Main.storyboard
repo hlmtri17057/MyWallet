@@ -378,8 +378,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M7-yv-Aaf" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="140" width="260" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M7-yv-Aaf" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="170" y="142" width="260" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="4u5-WL-sFg"/>
                                     <constraint firstAttribute="width" constant="260" id="bHn-kL-MzF"/>
@@ -397,26 +397,9 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ero-hz-b5y" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="185" width="260" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="3yt-uo-gC2"/>
-                                    <constraint firstAttribute="width" constant="260" id="5cu-vk-aDB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="THÊM KHOẢNG CHI"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="7T9-zc-hwi" kind="presentation" id="iuz-jJ-Y58"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9Z-mN-lL7" customClass="button" customModule="MyWallet" customModuleProvider="target">
                                 <rect key="frame" x="170" y="230" width="260" height="35"/>
@@ -523,6 +506,29 @@
                                 <state key="normal" title="Button" image="icon5d_back.png"/>
                                 <connections>
                                     <action selector="Tapped_buttonback:" destination="inv-iF-Hgy" eventType="touchUpInside" id="xty-mR-GTJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ero-hz-b5y" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="170" y="185" width="260" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3yt-uo-gC2"/>
+                                    <constraint firstAttribute="width" constant="260" id="5cu-vk-aDB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="THÊM KHOẢNG CHI"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="9kD-ne-EOr" kind="presentation" id="DEi-7c-YLr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -887,7 +893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sk-gc-m2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-390" y="1848"/>
+            <point key="canvasLocation" x="-422" y="1936"/>
         </scene>
         <!--Them Khoan Thu-->
         <scene sceneID="mxD-TS-Ylh">
@@ -997,15 +1003,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-53-55X" userLabel="Txt_note">
-                                <rect key="frame" x="370" y="275" width="210" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="m3c-0H-pvg"/>
-                                    <constraint firstAttribute="height" constant="35" id="xr9-Ou-xrk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-fs-Wg2" customClass="button" customModule="MyWallet" customModuleProvider="target">
                                 <rect key="frame" x="20" y="545" width="130" height="35"/>
                                 <constraints>
@@ -1045,6 +1042,9 @@
                                         <color key="value" red="0.19342394190000001" green="0.23352879439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="AwI-wg-qQW" kind="presentation" id="nGF-Sf-xi4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOk-79-ZNN" customClass="button" customModule="MyWallet" customModuleProvider="target">
                                 <rect key="frame" x="545" y="110" width="35" height="35"/>
@@ -1057,6 +1057,15 @@
                                     <action selector="Tapped_dropdown:" destination="7T9-zc-hwi" eventType="touchUpInside" id="gZg-Wo-vxz"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-53-55X" userLabel="Txt_note">
+                                <rect key="frame" x="370" y="275" width="210" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="m3c-0H-pvg"/>
+                                    <constraint firstAttribute="height" constant="35" id="xr9-Ou-xrk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1090,10 +1099,16 @@
                             <constraint firstItem="URJ-Dg-CZI" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="yZa-k1-elp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Txt_Calendar" destination="jEq-NA-JgR" id="t4E-j1-2TD"/>
+                        <outlet property="Txt_Money" destination="axm-gN-8Yf" id="3Fz-u1-CMN"/>
+                        <outlet property="Txt_Type" destination="7XL-Ob-pRx" id="qVn-0p-x0C"/>
+                        <outlet property="Txt_note" destination="2gi-53-55X" id="jmi-An-gIR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNF-I0-09w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1128" y="1848"/>
+            <point key="canvasLocation" x="-1367" y="1999"/>
         </scene>
         <!--Chi tiet Thongke-->
         <scene sceneID="MfB-AB-wiE">
@@ -1296,7 +1311,9 @@
         <image name="icon5d_back.png" width="450" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="DEi-7c-YLr"/>
         <segue reference="9Vy-69-mbK"/>
-        <segue reference="cZ4-5S-IfI"/>
+        <segue reference="nGF-Sf-xi4"/>
+        <segue reference="iuz-jJ-Y58"/>
     </inferredMetricsTieBreakers>
 </document>
