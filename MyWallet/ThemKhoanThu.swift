@@ -21,6 +21,10 @@ class ThemKhoanThu: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func Tapped_backbutton(sender: AnyObject) {
+    }
+    @IBAction func Tapped_dropdown(sender: AnyObject) {
+    }
 
     /*
     // MARK: - Navigation

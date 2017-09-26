@@ -154,7 +154,7 @@
                                     <constraint firstAttribute="height" constant="35" id="uba-ky-5II"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tháng" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-Pd-ib6" customClass="label" customModule="MyWallet" customModuleProvider="target">
@@ -164,7 +164,7 @@
                                     <constraint firstAttribute="width" constant="100" id="p1I-UO-vVm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I49-F2-Rkf" customClass="label" customModule="MyWallet" customModuleProvider="target">
@@ -174,7 +174,7 @@
                                     <constraint firstAttribute="height" constant="30" id="frP-HY-Fei"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7e-cX-sAu" userLabel="SETTING">
@@ -195,14 +195,14 @@
                                     <constraint firstAttribute="width" constant="130" id="bg1-S7-g5U"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -213,40 +213,17 @@
                                     <constraint firstAttribute="width" constant="130" id="hty-Aw-CFS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syb-Bg-MaY" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="501" width="130" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="H9y-a1-IsX"/>
-                                    <constraint firstAttribute="width" constant="130" id="LLZ-kK-nSM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <state key="normal" title="THÊM KHOẢN THU"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="7T9-zc-hwi" kind="presentation" id="n9U-yg-93i"/>
-                                </connections>
-                            </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wzT-fg-WKB">
                                 <rect key="frame" x="260" y="66" width="94" height="29"/>
                                 <constraints>
@@ -264,14 +241,14 @@
                                     <constraint firstAttribute="width" constant="130" id="VVa-jO-tYA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -282,14 +259,14 @@
                                     <constraint firstAttribute="width" constant="130" id="Y96-E3-x0i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -313,7 +290,7 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -321,6 +298,29 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="9kD-ne-EOr" kind="presentation" id="UOG-KM-LRq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syb-Bg-MaY" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="501" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="H9y-a1-IsX"/>
+                                    <constraint firstAttribute="width" constant="130" id="LLZ-kK-nSM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="THÊM KHOẢN THU"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="7T9-zc-hwi" kind="presentation" id="n9U-yg-93i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -488,7 +488,7 @@
                                     <constraint firstAttribute="width" constant="260" id="fmE-47-ICM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-og-FZr" customClass="button" customModule="MyWallet" customModuleProvider="target">
@@ -570,7 +570,7 @@
                                     <constraint firstAttribute="height" constant="21" id="JSL-i7-KoO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXJ-07-iRd" userLabel="Txt_Password" customClass="textfield" customModule="MyWallet" customModuleProvider="target">
@@ -689,7 +689,7 @@
                                     <constraint firstAttribute="height" constant="30" id="xF2-2t-Rad"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -742,14 +742,14 @@
                                                         <constraint firstAttribute="height" constant="30" id="uax-dB-jP2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
@@ -760,14 +760,14 @@
                                                         <constraint firstAttribute="width" constant="130" id="wsU-9O-NTn"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
@@ -778,14 +778,14 @@
                                                         <constraint firstAttribute="height" constant="30" id="s1d-QA-226"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
@@ -796,7 +796,7 @@
                                                         <constraint firstAttribute="height" constant="30" id="WPK-b1-poI"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -874,7 +874,7 @@
                                     <constraint firstAttribute="width" constant="166" id="dZs-Au-akM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -908,6 +908,9 @@
                                     <constraint firstAttribute="width" constant="50" id="sAD-ef-ujd"/>
                                 </constraints>
                                 <state key="normal" title="ButtonBack" image="icon5d_back.png"/>
+                                <connections>
+                                    <action selector="Tapped_backbutton:" destination="7T9-zc-hwi" eventType="touchUpInside" id="w7F-nw-5mw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM KHOẢN THU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laH-lc-Q73" customClass="label" customModule="MyWallet" customModuleProvider="target">
                                 <rect key="frame" x="200" y="25" width="200" height="35"/>
@@ -916,16 +919,175 @@
                                     <constraint firstAttribute="width" constant="200" id="qhh-yb-mWT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại thu : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kco-hU-2rM" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="110" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8Xr-HY-cMR"/>
+                                    <constraint firstAttribute="width" constant="100" id="MRv-eq-4cc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7XL-Ob-pRx" userLabel="Txt_loaithu" customClass="textfield" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="370" y="110" width="170" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="JSj-o3-dKa"/>
+                                    <constraint firstAttribute="width" constant="170" id="iy1-d1-1zj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tiền" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5D-ih-vA1" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="165" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lt1-xE-eWF"/>
+                                    <constraint firstAttribute="width" constant="100" id="yiS-qR-SGd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axm-gN-8Yf" userLabel="Txt_Money">
+                                <rect key="frame" x="370" y="165" width="210" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="RAj-Tg-F7j"/>
+                                    <constraint firstAttribute="height" constant="35" id="UaL-zM-blE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qus-95-M5j" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="220" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Xnf-HT-S5K"/>
+                                    <constraint firstAttribute="height" constant="35" id="c2J-nn-97v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2al-NO-k28" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="545" y="220" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="8b0-vy-9hm"/>
+                                    <constraint firstAttribute="height" constant="35" id="DBG-zi-iFp"/>
+                                </constraints>
+                                <state key="normal" title="Lịch" image="calendar1.png"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEq-NA-JgR" userLabel="Txt_calendar">
+                                <rect key="frame" x="370" y="220" width="170" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="UH7-8g-pry"/>
+                                    <constraint firstAttribute="height" constant="35" id="fhb-qX-bQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghi chú" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URJ-Dg-CZI" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="275" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="LUQ-Tk-O2Z"/>
+                                    <constraint firstAttribute="width" constant="100" id="v6d-VU-KKd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-53-55X" userLabel="Txt_note">
+                                <rect key="frame" x="370" y="275" width="210" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="m3c-0H-pvg"/>
+                                    <constraint firstAttribute="height" constant="35" id="xr9-Ou-xrk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-fs-Wg2" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="545" width="130" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="UwW-nN-lYT"/>
+                                    <constraint firstAttribute="height" constant="35" id="keU-rZ-iPk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lưu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.19342394190000001" green="0.23352879439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-E2-Zfg" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="450" y="545" width="130" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="86r-1N-o4T"/>
+                                    <constraint firstAttribute="height" constant="35" id="JMX-bJ-cOo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Thoát"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.19342394190000001" green="0.23352879439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOk-79-ZNN" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="545" y="110" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="G1O-UW-8UQ"/>
+                                    <constraint firstAttribute="width" constant="35" id="Zah-He-kVh"/>
+                                </constraints>
+                                <state key="normal" title="action" image="dropdown2.png"/>
+                                <connections>
+                                    <action selector="Tapped_dropdown:" destination="7T9-zc-hwi" eventType="touchUpInside" id="gZg-Wo-vxz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7XL-Ob-pRx" firstAttribute="top" secondItem="laH-lc-Q73" secondAttribute="bottom" constant="50" id="3C0-du-onA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gUD-E2-Zfg" secondAttribute="trailing" id="3E7-Lk-kKL"/>
+                            <constraint firstItem="2al-NO-k28" firstAttribute="top" secondItem="axm-gN-8Yf" secondAttribute="bottom" constant="20" id="6ch-5T-9Nn"/>
+                            <constraint firstItem="jEq-NA-JgR" firstAttribute="top" secondItem="axm-gN-8Yf" secondAttribute="bottom" constant="20" id="7c1-Ie-kWZ"/>
+                            <constraint firstItem="2al-NO-k28" firstAttribute="leading" secondItem="jEq-NA-JgR" secondAttribute="trailing" constant="5" id="CeR-Eg-XDJ"/>
+                            <constraint firstItem="Qus-95-M5j" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="DbU-uE-T2B"/>
                             <constraint firstItem="laH-lc-Q73" firstAttribute="centerX" secondItem="xMZ-ED-wkB" secondAttribute="centerX" id="Ee4-S5-0vs"/>
+                            <constraint firstItem="LOk-79-ZNN" firstAttribute="top" secondItem="laH-lc-Q73" secondAttribute="bottom" constant="50" id="GeX-mE-3m1"/>
+                            <constraint firstItem="L5D-ih-vA1" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="GgY-UP-akF"/>
+                            <constraint firstItem="Kco-hU-2rM" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="HGy-IH-y8x"/>
                             <constraint firstItem="laH-lc-Q73" firstAttribute="top" secondItem="xMZ-ED-wkB" secondAttribute="topMargin" constant="25" id="Mpx-uu-1hZ"/>
+                            <constraint firstItem="XLF-mN-jZW" firstAttribute="top" secondItem="gUD-E2-Zfg" secondAttribute="bottom" constant="20" id="OTq-gI-amN"/>
+                            <constraint firstItem="1a2-fs-Wg2" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="Orm-rz-9VU"/>
                             <constraint firstItem="QWj-Fo-cCM" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="PNz-fh-Ac0"/>
+                            <constraint firstItem="URJ-Dg-CZI" firstAttribute="top" secondItem="Qus-95-M5j" secondAttribute="bottom" constant="20" id="SgP-Tm-d7G"/>
                             <constraint firstItem="QWj-Fo-cCM" firstAttribute="top" secondItem="xMZ-ED-wkB" secondAttribute="topMargin" constant="25" id="T6c-h5-h9G"/>
+                            <constraint firstItem="axm-gN-8Yf" firstAttribute="top" secondItem="7XL-Ob-pRx" secondAttribute="bottom" constant="20" id="TOB-ln-FbK"/>
+                            <constraint firstItem="Qus-95-M5j" firstAttribute="top" secondItem="L5D-ih-vA1" secondAttribute="bottom" constant="20" id="UXI-qw-dvX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2al-NO-k28" secondAttribute="trailing" id="WBc-at-r9k"/>
+                            <constraint firstItem="2gi-53-55X" firstAttribute="top" secondItem="jEq-NA-JgR" secondAttribute="bottom" constant="20" id="YfD-1t-jVD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LOk-79-ZNN" secondAttribute="trailing" id="Z3k-QI-gUr"/>
+                            <constraint firstItem="LOk-79-ZNN" firstAttribute="leading" secondItem="7XL-Ob-pRx" secondAttribute="trailing" constant="5" id="cf3-mN-ds9"/>
+                            <constraint firstItem="Kco-hU-2rM" firstAttribute="top" secondItem="laH-lc-Q73" secondAttribute="bottom" constant="50" id="e1q-3L-U1N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="axm-gN-8Yf" secondAttribute="trailing" id="jLH-Xb-Ez2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2gi-53-55X" secondAttribute="trailing" id="m2c-1L-MVn"/>
+                            <constraint firstItem="XLF-mN-jZW" firstAttribute="top" secondItem="1a2-fs-Wg2" secondAttribute="bottom" constant="20" id="vce-iG-w5x"/>
+                            <constraint firstItem="L5D-ih-vA1" firstAttribute="top" secondItem="Kco-hU-2rM" secondAttribute="bottom" constant="20" id="xD2-Fw-UBv"/>
+                            <constraint firstItem="URJ-Dg-CZI" firstAttribute="leading" secondItem="xMZ-ED-wkB" secondAttribute="leadingMargin" id="yZa-k1-elp"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -952,7 +1114,7 @@
                                     <constraint firstAttribute="width" constant="100" id="ybm-Gi-rBf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2E-SW-cjM" userLabel="DATE_SHOW" customClass="label" customModule="MyWallet" customModuleProvider="target">
@@ -962,7 +1124,7 @@
                                     <constraint firstAttribute="width" constant="10" id="o4B-ne-IHj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6R-vk-1wl" userLabel="Menu" customClass="button" customModule="MyWallet" customModuleProvider="target">
@@ -1004,14 +1166,14 @@
                                     <constraint firstAttribute="height" constant="30" id="skj-Tb-eLi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1022,14 +1184,14 @@
                                     <constraint firstAttribute="height" constant="30" id="zoh-nY-nDt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1040,14 +1202,14 @@
                                     <constraint firstAttribute="width" constant="130" id="gmR-28-tTH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1058,14 +1220,14 @@
                                     <constraint firstAttribute="width" constant="130" id="t5G-0L-gGK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1083,7 +1245,7 @@
                                     <constraint firstAttribute="width" constant="100" id="T5V-um-4f4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1127,6 +1289,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar1.png" width="1584" height="1584"/>
+        <image name="dropdown2.png" width="512" height="512"/>
         <image name="icon3.jpg" width="347" height="346"/>
         <image name="icon4.jpg" width="225" height="225"/>
         <image name="icon5d_back.png" width="450" height="225"/>
