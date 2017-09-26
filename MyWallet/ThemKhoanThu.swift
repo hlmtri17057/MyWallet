@@ -30,36 +30,23 @@ class ThemKhoanThu: UIViewController {
     }
     @IBAction func Tapped_dropdown(sender: AnyObject) {
         
-        var myActionSheet = UIAlertController(title: "Chon nhom", message: "?" , preferredStyle: .ActionSheet)
-        let rent_house = UIAlertAction(title: "Tiền nhà", style: UIAlertActionStyle.Default){
-            (ACTION) in
-            self.Txt_Type.text = "Tiền nhà"
-        }
-        let money_food = UIAlertAction(title: "Tiền ăn", style: UIAlertActionStyle.Default){
-            (ACTION) in
-                self.Txt_Type.text = "Tiền ăn"
-        }
+        var myActionSheet = UIAlertController(title: "Chon nhom", message: nil, preferredStyle: .ActionSheet)
+       
         let salary = UIAlertAction(title: "Lương", style: UIAlertActionStyle.Default){
             (ACTION) in
             self.Txt_Type.text = "Lương"
         }
-        let tuition_fee = UIAlertAction(title: "Học phí", style: UIAlertActionStyle.Default){
+        let bonus = UIAlertAction(title: "Thưởng", style: UIAlertActionStyle.Default){
             (ACTION) in
-            self.Txt_Type.text = "Học phí"
+            self.Txt_Type.text = "Thưởng"
         }
-        let gasoline = UIAlertAction(title: "Xăng", style: UIAlertActionStyle.Default){
-            (ACTION) in
-            self.Txt_Type.text = "Xăng"
-        }
+        
         let close = UIAlertAction(title: "Đóng", style: .Cancel, handler:{
              action in print("close")
         })
         
-        myActionSheet.addAction(rent_house)
-        myActionSheet.addAction(money_food)
         myActionSheet.addAction(salary)
-        myActionSheet.addAction(tuition_fee)
-        myActionSheet.addAction(gasoline)
+        myActionSheet.addAction(bonus)
         myActionSheet.addAction(close)
         
         presentViewController(myActionSheet, animated: true, completion: nil)

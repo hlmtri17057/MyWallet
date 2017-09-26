@@ -873,27 +873,208 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM KHOẢN CHI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-og-r6w" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="217" y="50" width="166" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM KHOẢN CHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-og-r6w" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="200" y="25" width="200" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="aq4-SX-YpD"/>
-                                    <constraint firstAttribute="width" constant="166" id="dZs-Au-akM"/>
+                                    <constraint firstAttribute="height" constant="35" id="aq4-SX-YpD"/>
+                                    <constraint firstAttribute="width" constant="200" id="dZs-Au-akM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại chi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L44-JH-dg7">
+                                <rect key="frame" x="20" y="110" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8cH-1V-g3w"/>
+                                    <constraint firstAttribute="width" constant="100" id="bfx-O5-ynK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bK-hH-4qb" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="545" y="110" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="K5d-19-Vfw"/>
+                                    <constraint firstAttribute="height" constant="35" id="imj-kd-ENL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="dropdown2.png"/>
+                                <connections>
+                                    <action selector="dropdown_button:" destination="9kD-ne-EOr" eventType="touchUpInside" id="tKm-9c-q0V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tiền" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncY-sC-S3t">
+                                <rect key="frame" x="20" y="165" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="A1e-C3-h8Q"/>
+                                    <constraint firstAttribute="height" constant="35" id="s5q-Eo-Wt5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjU-eQ-p0e" userLabel="Txt_money">
+                                <rect key="frame" x="370" y="165" width="210" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="AxG-Tx-Fva"/>
+                                    <constraint firstAttribute="width" constant="210" id="lLO-I1-f42"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzP-x7-65g">
+                                <rect key="frame" x="20" y="220" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Mnb-Sa-3we"/>
+                                    <constraint firstAttribute="width" constant="100" id="sEs-LS-Wh1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3h-Rl-31u" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="545" y="220" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hfe-L1-ej9"/>
+                                    <constraint firstAttribute="width" constant="35" id="wKE-CS-Vus"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="calendar1.png"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKn-x0-KjW" userLabel="Txt_Calendar">
+                                <rect key="frame" x="370" y="220" width="170" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="H4A-QA-lcq"/>
+                                    <constraint firstAttribute="height" constant="35" id="Ubd-aO-0Fo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghi chú" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8W-3O-34i">
+                                <rect key="frame" x="20" y="275" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="B6m-HF-T1t"/>
+                                    <constraint firstAttribute="width" constant="100" id="ueG-ew-3S5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CCD-9g-1OS">
+                                <rect key="frame" x="370" y="275" width="210" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="I2X-1e-359"/>
+                                    <constraint firstAttribute="height" constant="35" id="RZy-lq-TEf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDe-MM-CPK" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="545" width="130" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="OXv-x8-tpp"/>
+                                    <constraint firstAttribute="width" constant="130" id="yZD-5G-CX8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lưu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-KG-K0O" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="450" y="545" width="130" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="qbg-SF-Yxg"/>
+                                    <constraint firstAttribute="height" constant="35" id="zFp-ZZ-KPZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Thoát"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="AwI-wg-qQW" kind="presentation" id="lRT-ZZ-xyK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHS-eK-raU">
+                                <rect key="frame" x="20" y="25" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="R6K-vx-axZ"/>
+                                    <constraint firstAttribute="width" constant="50" id="TBa-UC-pEK"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icon5d_back.png"/>
+                                <connections>
+                                    <action selector="Tapped_backbutton:" destination="9kD-ne-EOr" eventType="touchUpInside" id="8C5-8b-ZTe"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeH-C6-Al7" userLabel="Txt_loaichi">
+                                <rect key="frame" x="370" y="110" width="170" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2dT-gS-C1T"/>
+                                    <constraint firstAttribute="width" constant="170" id="N1J-tI-TT4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zBI-og-r6w" firstAttribute="top" secondItem="PQV-vK-Gdq" secondAttribute="topMargin" constant="50" id="BQh-qa-ksG"/>
+                            <constraint firstItem="pHS-eK-raU" firstAttribute="leading" secondItem="PQV-vK-Gdq" secondAttribute="leadingMargin" id="0wO-cW-zg6"/>
+                            <constraint firstItem="ZzP-x7-65g" firstAttribute="top" secondItem="ncY-sC-S3t" secondAttribute="bottom" constant="20" id="35H-gf-kKj"/>
+                            <constraint firstItem="pHS-eK-raU" firstAttribute="top" secondItem="PQV-vK-Gdq" secondAttribute="topMargin" constant="25" id="4n5-ff-s4F"/>
+                            <constraint firstItem="CCD-9g-1OS" firstAttribute="top" secondItem="PKn-x0-KjW" secondAttribute="bottom" constant="20" id="658-zh-Q47"/>
+                            <constraint firstItem="w8W-3O-34i" firstAttribute="leading" secondItem="PQV-vK-Gdq" secondAttribute="leadingMargin" id="88u-JT-BZF"/>
+                            <constraint firstItem="w8W-3O-34i" firstAttribute="top" secondItem="ZzP-x7-65g" secondAttribute="bottom" constant="20" id="9rh-tm-Ob4"/>
+                            <constraint firstItem="L44-JH-dg7" firstAttribute="leading" secondItem="PQV-vK-Gdq" secondAttribute="leadingMargin" id="AoZ-nF-zBZ"/>
+                            <constraint firstItem="I3h-Rl-31u" firstAttribute="top" secondItem="bjU-eQ-p0e" secondAttribute="bottom" constant="20" id="Asi-IE-9Wk"/>
+                            <constraint firstItem="zBI-og-r6w" firstAttribute="top" secondItem="PQV-vK-Gdq" secondAttribute="topMargin" constant="25" id="BQh-qa-ksG"/>
+                            <constraint firstItem="I3h-Rl-31u" firstAttribute="leading" secondItem="PKn-x0-KjW" secondAttribute="trailing" constant="5" id="D1G-YL-05h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7bK-hH-4qb" secondAttribute="trailing" id="HXd-c7-ctu"/>
+                            <constraint firstItem="ZzP-x7-65g" firstAttribute="leading" secondItem="PQV-vK-Gdq" secondAttribute="leadingMargin" id="Nwz-Ih-LLT"/>
+                            <constraint firstItem="7bK-hH-4qb" firstAttribute="top" secondItem="zBI-og-r6w" secondAttribute="bottom" constant="50" id="RO9-B2-p76"/>
+                            <constraint firstItem="EeH-C6-Al7" firstAttribute="top" secondItem="zBI-og-r6w" secondAttribute="bottom" constant="50" id="SNn-L7-gFp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CCD-9g-1OS" secondAttribute="trailing" id="XIY-Oj-M62"/>
+                            <constraint firstItem="PKn-x0-KjW" firstAttribute="top" secondItem="bjU-eQ-p0e" secondAttribute="bottom" constant="20" id="Xlv-DO-hEK"/>
+                            <constraint firstItem="t8Q-8k-3Jo" firstAttribute="top" secondItem="aDe-MM-CPK" secondAttribute="bottom" constant="20" id="Y5y-rz-J8F"/>
                             <constraint firstItem="zBI-og-r6w" firstAttribute="centerX" secondItem="PQV-vK-Gdq" secondAttribute="centerX" id="YAS-Dh-0vx"/>
+                            <constraint firstItem="L44-JH-dg7" firstAttribute="top" secondItem="zBI-og-r6w" secondAttribute="bottom" constant="50" id="cZR-5b-DRz"/>
+                            <constraint firstItem="bjU-eQ-p0e" firstAttribute="top" secondItem="EeH-C6-Al7" secondAttribute="bottom" constant="20" id="eK9-tZ-ikp"/>
+                            <constraint firstItem="ncY-sC-S3t" firstAttribute="top" secondItem="L44-JH-dg7" secondAttribute="bottom" constant="20" id="eMO-RB-3DA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I3h-Rl-31u" secondAttribute="trailing" id="fy9-3y-7xI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qjb-KG-K0O" secondAttribute="trailing" id="gam-tm-u5U"/>
+                            <constraint firstItem="aDe-MM-CPK" firstAttribute="leading" secondItem="PQV-vK-Gdq" secondAttribute="leadingMargin" id="lJ9-20-ZJi"/>
+                            <constraint firstItem="t8Q-8k-3Jo" firstAttribute="top" secondItem="qjb-KG-K0O" secondAttribute="bottom" constant="20" id="lgg-pA-7UE"/>
+                            <constraint firstItem="ncY-sC-S3t" firstAttribute="leading" secondItem="PQV-vK-Gdq" secondAttribute="leadingMargin" id="nw3-x1-mfb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bjU-eQ-p0e" secondAttribute="trailing" id="vsU-NS-44y"/>
+                            <constraint firstItem="7bK-hH-4qb" firstAttribute="leading" secondItem="EeH-C6-Al7" secondAttribute="trailing" constant="5" id="zWC-vF-gjX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Txt_Calendar" destination="PKn-x0-KjW" id="VK3-cS-5a5"/>
+                        <outlet property="Txt_Money" destination="bjU-eQ-p0e" id="aZF-xh-Xo0"/>
+                        <outlet property="Txt_Type" destination="EeH-C6-Al7" id="chT-I0-QwL"/>
+                        <outlet property="Txt_note" destination="CCD-9g-1OS" id="FEb-hf-EUB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sk-gc-m2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-422" y="1936"/>
+            <point key="canvasLocation" x="-567" y="1999"/>
         </scene>
         <!--Them Khoan Thu-->
         <scene sceneID="mxD-TS-Ylh">
@@ -1003,26 +1184,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-fs-Wg2" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="545" width="130" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-53-55X" userLabel="Txt_note">
+                                <rect key="frame" x="370" y="275" width="210" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="UwW-nN-lYT"/>
-                                    <constraint firstAttribute="height" constant="35" id="keU-rZ-iPk"/>
+                                    <constraint firstAttribute="width" constant="210" id="m3c-0H-pvg"/>
+                                    <constraint firstAttribute="height" constant="35" id="xr9-Ou-xrk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Lưu"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.19342394190000001" green="0.23352879439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-E2-Zfg" customClass="button" customModule="MyWallet" customModuleProvider="target">
                                 <rect key="frame" x="450" y="545" width="130" height="35"/>
                                 <constraints>
@@ -1057,15 +1227,26 @@
                                     <action selector="Tapped_dropdown:" destination="7T9-zc-hwi" eventType="touchUpInside" id="gZg-Wo-vxz"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-53-55X" userLabel="Txt_note">
-                                <rect key="frame" x="370" y="275" width="210" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-fs-Wg2" customClass="button" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="545" width="130" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="m3c-0H-pvg"/>
-                                    <constraint firstAttribute="height" constant="35" id="xr9-Ou-xrk"/>
+                                    <constraint firstAttribute="width" constant="130" id="UwW-nN-lYT"/>
+                                    <constraint firstAttribute="height" constant="35" id="keU-rZ-iPk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lưu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.19342394190000001" green="0.23352879439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1313,7 +1494,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="DEi-7c-YLr"/>
         <segue reference="9Vy-69-mbK"/>
-        <segue reference="nGF-Sf-xi4"/>
+        <segue reference="lRT-ZZ-xyK"/>
         <segue reference="iuz-jJ-Y58"/>
     </inferredMetricsTieBreakers>
 </document>
