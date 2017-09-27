@@ -31,7 +31,7 @@ class ThemKhoanChi: UIViewController {
     }
     
     @IBAction func dropdown_button(sender: AnyObject) {
-        var myActionSheet = UIAlertController(title: "Chon nhom", message: nil, preferredStyle: .ActionSheet)
+        var myActionSheet = UIAlertController(title: "CHỌN LOẠI CHI", message: nil, preferredStyle: .ActionSheet)
         let rent_house = UIAlertAction(title: "Tiền nhà", style: UIAlertActionStyle.Default){
             (ACTION) in
             self.Txt_Type.text = "Tiền nhà"
@@ -48,6 +48,14 @@ class ThemKhoanChi: UIViewController {
             (ACTION) in
             self.Txt_Type.text = "Xăng"
         }
+        let others = UIAlertAction(title: "Mua sắm, cafe, du lịch", style: UIAlertActionStyle.Default){
+            (ACTION) in
+            self.Txt_Type.text = "Mua sắm, cafe, du lịch"
+        }
+        let luckymoney = UIAlertAction(title: "Tiền mừng các loại", style: UIAlertActionStyle.Default){
+            (ACTION) in
+            self.Txt_Type.text = "Tiền mừng các loại"
+        }
         let close = UIAlertAction(title: "Đóng", style: .Cancel, handler:{
             action in print("close")
         })
@@ -56,6 +64,8 @@ class ThemKhoanChi: UIViewController {
         myActionSheet.addAction(money_food)
         myActionSheet.addAction(tuition_fee)
         myActionSheet.addAction(gasoline)
+        myActionSheet.addAction(others)
+        myActionSheet.addAction(luckymoney)
         myActionSheet.addAction(close)
         
         presentViewController(myActionSheet, animated: true, completion: nil)

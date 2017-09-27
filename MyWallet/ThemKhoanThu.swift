@@ -30,7 +30,7 @@ class ThemKhoanThu: UIViewController {
     }
     @IBAction func Tapped_dropdown(sender: AnyObject) {
         
-        var myActionSheet = UIAlertController(title: "Chon nhom", message: nil, preferredStyle: .ActionSheet)
+        var myActionSheet = UIAlertController(title: "CHỌN LOẠI THU", message: nil, preferredStyle: .ActionSheet)
        
         let salary = UIAlertAction(title: "Lương", style: UIAlertActionStyle.Default){
             (ACTION) in
