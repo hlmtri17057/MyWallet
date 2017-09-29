@@ -4,12 +4,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="DVr-nS-jSj">
             <objects>
                 <navigationController id="r9d-GW-V2B" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ocS-Rt-rbS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -20,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnV-ja-MLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="302"/>
+            <point key="canvasLocation" x="-747" y="-34"/>
         </scene>
         <!--DangNhap-->
         <scene sceneID="tne-QT-ifu">
@@ -31,11 +33,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-MP-AOn" customClass="view" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="180" y="100" width="240" height="250"/>
+                                <rect key="frame" x="40" y="100" width="240" height="250"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gHq-NF-Z0T" userLabel="Txt-Pass" customClass="textfield" customModule="MyWallet" customModuleProvider="target">
                                         <rect key="frame" x="10" y="148" width="220" height="35"/>
@@ -127,13 +129,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4pC-xG-1ny"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="TxtPassword" destination="gHq-NF-Z0T" id="TaI-XS-DTs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1472" y="-18"/>
+            <point key="canvasLocation" x="-1624" y="-57"/>
         </scene>
         <!--HOME-->
         <scene sceneID="mgJ-l5-oAy">
@@ -144,11 +147,11 @@
                         <viewControllerLayoutGuide type="bottom" id="SZ3-Ad-fjX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OS1-hY-6S7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssJ-WI-o4R">
-                                <rect key="frame" x="295" y="28" width="10" height="35"/>
+                                <rect key="frame" x="155" y="28" width="10" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="DdO-VN-GQe"/>
                                     <constraint firstAttribute="height" constant="35" id="uba-ky-5II"/>
@@ -158,7 +161,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tháng" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-Pd-ib6" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="195" y="28" width="100" height="30"/>
+                                <rect key="frame" x="55" y="28" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ehA-ba-88G"/>
                                     <constraint firstAttribute="width" constant="100" id="p1I-UO-vVm"/>
@@ -168,7 +171,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I49-F2-Rkf" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="305" y="28" width="100" height="30"/>
+                                <rect key="frame" x="165" y="28" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="QHB-sO-Aft"/>
                                     <constraint firstAttribute="height" constant="30" id="frP-HY-Fei"/>
@@ -178,7 +181,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7e-cX-sAu" userLabel="SETTING">
-                                <rect key="frame" x="540" y="28" width="30" height="30"/>
+                                <rect key="frame" x="264" y="28" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Snt-0e-LPm"/>
                                     <constraint firstAttribute="height" constant="30" id="T4N-Ju-tUi"/>
@@ -189,7 +192,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DƯ THÁNG" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cN-IF-9Y6" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="138" width="130" height="30"/>
+                                <rect key="frame" x="16" y="138" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TcV-Bq-EDT"/>
                                     <constraint firstAttribute="width" constant="130" id="bg1-S7-g5U"/>
@@ -207,7 +210,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DƯ TỔNG" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlx-AZ-Cuv" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="450" y="138" width="130" height="30"/>
+                                <rect key="frame" x="174" y="138" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ZGp-lc-bT4"/>
                                     <constraint firstAttribute="width" constant="130" id="hty-Aw-CFS"/>
@@ -225,7 +228,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wzT-fg-WKB">
-                                <rect key="frame" x="260" y="66" width="94" height="29"/>
+                                <rect key="frame" x="120" y="66" width="94" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="IDf-fU-2DX"/>
                                     <constraint firstAttribute="height" constant="30" id="Mov-t8-gbB"/>
@@ -235,7 +238,7 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqd-Bw-gru" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="450" y="103" width="130" height="30"/>
+                                <rect key="frame" x="174" y="103" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4r4-sN-Xxj"/>
                                     <constraint firstAttribute="width" constant="130" id="VVa-jO-tYA"/>
@@ -253,7 +256,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHZ-RC-yOd" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="103" width="130" height="30"/>
+                                <rect key="frame" x="16" y="103" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6Al-0M-F9r"/>
                                     <constraint firstAttribute="width" constant="130" id="Y96-E3-x0i"/>
@@ -271,14 +274,14 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aYl-sk-o2R">
-                                <rect key="frame" x="20" y="198" width="560" height="250"/>
+                                <rect key="frame" x="16" y="198" width="288" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="bhd-PJ-NY9"/>
                                 </constraints>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpW-ds-QSv" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="450" y="501" width="130" height="30"/>
+                                <rect key="frame" x="174" y="381" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Pmi-ED-dpw"/>
                                     <constraint firstAttribute="height" constant="30" id="aRb-Gr-Mhs"/>
@@ -301,7 +304,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syb-Bg-MaY" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="501" width="130" height="30"/>
+                                <rect key="frame" x="16" y="381" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="H9y-a1-IsX"/>
                                     <constraint firstAttribute="width" constant="130" id="LLZ-kK-nSM"/>
@@ -355,6 +358,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="HOME" id="bAr-ko-aqK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="DATE" destination="I49-F2-Rkf" id="8bf-tH-AiL"/>
                         <outlet property="DATE_SHOW" destination="ssJ-WI-o4R" id="lK4-wo-v1y"/>
@@ -364,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4c-0k-AuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735" y="1157"/>
+            <point key="canvasLocation" x="-1788" y="1151"/>
         </scene>
         <!--Menu-->
         <scene sceneID="6sa-dp-JtD">
@@ -375,11 +379,11 @@
                         <viewControllerLayoutGuide type="bottom" id="GTP-Ub-aYT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YVO-De-wJW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M7-yv-Aaf" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="142" width="260" height="35"/>
+                                <rect key="frame" x="30" y="142" width="260" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="4u5-WL-sFg"/>
                                     <constraint firstAttribute="width" constant="260" id="bHn-kL-MzF"/>
@@ -402,7 +406,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9Z-mN-lL7" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="230" width="260" height="35"/>
+                                <rect key="frame" x="30" y="230" width="260" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="BDv-6f-aRR"/>
                                     <constraint firstAttribute="width" constant="260" id="YGj-jv-ejI"/>
@@ -420,9 +424,12 @@
                                         <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wKl-MK-1Xx" kind="show" id="dkW-Ff-bCY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQI-Y2-ZLf" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="320" width="260" height="35"/>
+                                <rect key="frame" x="30" y="320" width="260" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="Bng-t6-1ZY"/>
                                     <constraint firstAttribute="height" constant="35" id="drK-un-aOk"/>
@@ -442,7 +449,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7U-G7-vw5" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="365" width="260" height="35"/>
+                                <rect key="frame" x="30" y="365" width="260" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="GoD-PG-8wT"/>
                                     <constraint firstAttribute="height" constant="35" id="dnG-AG-FNB"/>
@@ -465,7 +472,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQc-Rr-JVt" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="72" width="260" height="50"/>
+                                <rect key="frame" x="30" y="72" width="260" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="C0o-ic-0SN"/>
                                     <constraint firstAttribute="width" constant="260" id="fmE-47-ICM"/>
@@ -475,7 +482,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-og-FZr" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="275" width="260" height="35"/>
+                                <rect key="frame" x="30" y="275" width="260" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="3MQ-xI-VmV"/>
                                     <constraint firstAttribute="width" constant="260" id="xgg-v8-JEm"/>
@@ -498,7 +505,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-UQ-FFG" userLabel="button_back" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="45" width="50" height="25"/>
+                                <rect key="frame" x="16" y="45" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="HJe-iI-rwz"/>
                                     <constraint firstAttribute="height" constant="25" id="l9T-nV-nZa"/>
@@ -509,7 +516,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ero-hz-b5y" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="170" y="185" width="260" height="35"/>
+                                <rect key="frame" x="30" y="185" width="260" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="3yt-uo-gC2"/>
                                     <constraint firstAttribute="width" constant="260" id="5cu-vk-aDB"/>
@@ -552,10 +559,11 @@
                             <constraint firstItem="r7U-G7-vw5" firstAttribute="centerX" secondItem="YVO-De-wJW" secondAttribute="centerX" id="w7B-s4-nkP"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4B-v0-y9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="-45"/>
+            <point key="canvasLocation" x="-1252" y="1237"/>
         </scene>
         <!--Password-->
         <scene sceneID="YQh-uj-Gxm">
@@ -566,11 +574,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Od3-3n-BHC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2gq-KB-2pG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập mật khẩu mới " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-eE-Xs1">
-                                <rect key="frame" x="200" y="155" width="200" height="21"/>
+                                <rect key="frame" x="60" y="155" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="13q-xx-TnJ"/>
                                     <constraint firstAttribute="height" constant="21" id="JSL-i7-KoO"/>
@@ -580,7 +588,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXJ-07-iRd" userLabel="Txt_Password" customClass="textfield" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="177" y="184" width="247" height="30"/>
+                                <rect key="frame" x="37" y="184" width="247" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ic1-FQ-Zvs"/>
                                     <constraint firstAttribute="width" constant="247" id="zIv-OQ-VC7"/>
@@ -597,7 +605,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS1-za-dSY" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="240" y="242" width="120" height="35"/>
+                                <rect key="frame" x="100" y="242" width="120" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Aok-QR-WNF"/>
@@ -623,7 +631,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWO-CD-8dP" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="45" width="50" height="25"/>
+                                <rect key="frame" x="16" y="45" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="8Sm-h0-gMw"/>
                                     <constraint firstAttribute="height" constant="25" id="Sk6-cp-tQR"/>
@@ -646,13 +654,14 @@
                             <constraint firstItem="VWO-CD-8dP" firstAttribute="leading" secondItem="2gq-KB-2pG" secondAttribute="leadingMargin" id="vJ0-2e-NS0"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="Txt_Pass" destination="FXJ-07-iRd" id="01f-SV-VHk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddY-Mt-uUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="-45"/>
+            <point key="canvasLocation" x="-1604" y="548"/>
         </scene>
         <!--Thong Ke-->
         <scene sceneID="gTo-Z6-lGR">
@@ -663,11 +672,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ogt-Xa-BDk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yfm-s5-Kqf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqW-0i-eXb" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="560" y="25" width="30" height="25"/>
+                                <rect key="frame" x="284" y="25" width="30" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="LIA-GO-yKI"/>
                                     <constraint firstAttribute="width" constant="30" id="hDb-eF-4aC"/>
@@ -678,7 +687,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSE-br-m7n" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="10" y="25" width="50" height="25"/>
+                                <rect key="frame" x="6" y="25" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="3Fz-ct-JES"/>
                                     <constraint firstAttribute="height" constant="25" id="xuD-qx-Ll1"/>
@@ -689,7 +698,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SỐ DƯ TỔNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFN-vG-s7O" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="330" y="60" width="250" height="30"/>
+                                <rect key="frame" x="54" y="60" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="3Bi-69-exp"/>
                                     <constraint firstAttribute="height" constant="30" id="xF2-2t-Rad"/>
@@ -710,7 +719,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THỐNG KÊ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o3-dB-fzF" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="65" y="25" width="490" height="30"/>
+                                <rect key="frame" x="61" y="25" width="218" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VhR-lG-Kyq"/>
@@ -731,14 +740,14 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lt6-rj-gsJ">
-                                <rect key="frame" x="20" y="110" width="560" height="460"/>
+                                <rect key="frame" x="16" y="110" width="288" height="340"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellThongKe" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellThongKe" rowHeight="88" id="BUC-Ff-hz9" userLabel="CellThongKe" customClass="CellThongKe" customModule="MyWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="88"/>
+                                        <rect key="frame" x="0.0" y="28" width="288" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BUC-Ff-hz9" id="lSL-Qu-SWS">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="87"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUD-0M-6Ao" customClass="label" customModule="MyWallet" customModuleProvider="target">
@@ -759,7 +768,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DƯ THÁNG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-lm-Fgt" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DƯ THÁNG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-lm-Fgt" customClass="label" customModule="MyWallet" customModuleProvider="target">
                                                     <rect key="frame" x="417" y="13" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="TvR-lH-0mg"/>
@@ -795,7 +804,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bu-kd-aEQ" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CHI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bu-kd-aEQ" customClass="label" customModule="MyWallet" customModuleProvider="target">
                                                     <rect key="frame" x="417" y="48" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="Agi-SU-6u8"/>
@@ -853,13 +862,14 @@
                             <constraint firstItem="FqW-0i-eXb" firstAttribute="leading" secondItem="9o3-dB-fzF" secondAttribute="trailing" constant="5" id="wyC-Nm-ZA4"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="tableview" destination="Lt6-rj-gsJ" id="TcP-4w-Hab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKs-v8-l8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="177" y="802"/>
+            <point key="canvasLocation" x="-1167" y="-73"/>
         </scene>
         <!--Them Khoan Chi-->
         <scene sceneID="dAK-bS-wT6">
@@ -870,21 +880,11 @@
                         <viewControllerLayoutGuide type="bottom" id="t8Q-8k-3Jo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PQV-vK-Gdq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM KHOẢN CHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-og-r6w" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="200" y="25" width="200" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="aq4-SX-YpD"/>
-                                    <constraint firstAttribute="width" constant="200" id="dZs-Au-akM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại chi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L44-JH-dg7">
-                                <rect key="frame" x="20" y="110" width="100" height="35"/>
+                                <rect key="frame" x="16" y="110" width="100" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="8cH-1V-g3w"/>
                                     <constraint firstAttribute="width" constant="100" id="bfx-O5-ynK"/>
@@ -894,7 +894,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bK-hH-4qb" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="545" y="110" width="35" height="35"/>
+                                <rect key="frame" x="269" y="110" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="K5d-19-Vfw"/>
                                     <constraint firstAttribute="height" constant="35" id="imj-kd-ENL"/>
@@ -905,7 +905,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tiền" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncY-sC-S3t">
-                                <rect key="frame" x="20" y="165" width="100" height="35"/>
+                                <rect key="frame" x="16" y="165" width="100" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="A1e-C3-h8Q"/>
                                     <constraint firstAttribute="height" constant="35" id="s5q-Eo-Wt5"/>
@@ -915,7 +915,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjU-eQ-p0e" userLabel="Txt_money">
-                                <rect key="frame" x="370" y="165" width="210" height="35"/>
+                                <rect key="frame" x="94" y="165" width="210" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="AxG-Tx-Fva"/>
                                     <constraint firstAttribute="width" constant="210" id="lLO-I1-f42"/>
@@ -924,7 +924,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzP-x7-65g">
-                                <rect key="frame" x="20" y="220" width="100" height="35"/>
+                                <rect key="frame" x="16" y="220" width="100" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Mnb-Sa-3we"/>
                                     <constraint firstAttribute="width" constant="100" id="sEs-LS-Wh1"/>
@@ -934,7 +934,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3h-Rl-31u" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="545" y="220" width="35" height="35"/>
+                                <rect key="frame" x="269" y="220" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="hfe-L1-ej9"/>
                                     <constraint firstAttribute="width" constant="35" id="wKE-CS-Vus"/>
@@ -942,7 +942,7 @@
                                 <state key="normal" title="Button" image="calendar1.png"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKn-x0-KjW" userLabel="Txt_Calendar">
-                                <rect key="frame" x="370" y="220" width="170" height="35"/>
+                                <rect key="frame" x="94" y="220" width="170" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="H4A-QA-lcq"/>
                                     <constraint firstAttribute="height" constant="35" id="Ubd-aO-0Fo"/>
@@ -951,7 +951,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghi chú" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8W-3O-34i">
-                                <rect key="frame" x="20" y="275" width="100" height="35"/>
+                                <rect key="frame" x="16" y="275" width="100" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="B6m-HF-T1t"/>
                                     <constraint firstAttribute="width" constant="100" id="ueG-ew-3S5"/>
@@ -961,7 +961,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CCD-9g-1OS">
-                                <rect key="frame" x="370" y="275" width="210" height="35"/>
+                                <rect key="frame" x="94" y="275" width="210" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="I2X-1e-359"/>
                                     <constraint firstAttribute="height" constant="35" id="RZy-lq-TEf"/>
@@ -970,7 +970,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDe-MM-CPK" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="545" width="130" height="35"/>
+                                <rect key="frame" x="16" y="425" width="130" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="OXv-x8-tpp"/>
                                     <constraint firstAttribute="width" constant="130" id="yZD-5G-CX8"/>
@@ -990,7 +990,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-KG-K0O" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="450" y="545" width="130" height="35"/>
+                                <rect key="frame" x="174" y="425" width="130" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="qbg-SF-Yxg"/>
                                     <constraint firstAttribute="height" constant="35" id="zFp-ZZ-KPZ"/>
@@ -1013,7 +1013,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHS-eK-raU">
-                                <rect key="frame" x="20" y="25" width="50" height="25"/>
+                                <rect key="frame" x="16" y="25" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="R6K-vx-axZ"/>
                                     <constraint firstAttribute="width" constant="50" id="TBa-UC-pEK"/>
@@ -1024,7 +1024,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeH-C6-Al7" userLabel="Txt_loaichi">
-                                <rect key="frame" x="370" y="110" width="170" height="35"/>
+                                <rect key="frame" x="94" y="110" width="170" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="2dT-gS-C1T"/>
                                     <constraint firstAttribute="width" constant="170" id="N1J-tI-TT4"/>
@@ -1032,6 +1032,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM KHOẢN CHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-og-r6w" customClass="label" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="60" y="25" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="aq4-SX-YpD"/>
+                                    <constraint firstAttribute="width" constant="200" id="dZs-Au-akM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1065,6 +1075,8 @@
                             <constraint firstItem="7bK-hH-4qb" firstAttribute="leading" secondItem="EeH-C6-Al7" secondAttribute="trailing" constant="5" id="zWC-vF-gjX"/>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="Txt_Calendar" destination="PKn-x0-KjW" id="VK3-cS-5a5"/>
                         <outlet property="Txt_Money" destination="bjU-eQ-p0e" id="aZF-xh-Xo0"/>
@@ -1074,7 +1086,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sk-gc-m2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="1999"/>
+            <point key="canvasLocation" x="-1009" y="1800"/>
         </scene>
         <!--Them Khoan Thu-->
         <scene sceneID="mxD-TS-Ylh">
@@ -1289,7 +1301,165 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNF-I0-09w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1367" y="1999"/>
+            <point key="canvasLocation" x="-1633" y="1925"/>
+        </scene>
+        <!--Tao Nhom Thu-->
+        <scene sceneID="9xc-8R-V8I">
+            <objects>
+                <viewController title="Tao Nhom Thu" id="wKl-MK-1Xx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yvT-kf-ynI"/>
+                        <viewControllerLayoutGuide type="bottom" id="yhQ-v7-gpV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e0U-KI-Kig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67p-2b-uNi" userLabel="View_main">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THÊM NHÓM THU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmu-BM-Dzl" userLabel="lbl_themkhoanthu">
+                                        <rect key="frame" x="70" y="20" width="242" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="jiB-nx-fj1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKR-7z-BHc">
+                                        <rect key="frame" x="8" y="22" width="50" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="IGk-4d-jJB"/>
+                                            <constraint firstAttribute="width" constant="50" id="qeQ-IA-94O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" backgroundImage="icon5d_back.png"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-lc-abt">
+                                        <rect key="frame" x="10" y="686" width="394" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjU-FZ-icl">
+                                                <rect key="frame" x="197" y="0.0" width="197" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjC-AV-MXF">
+                                                        <rect key="frame" x="20" y="0.0" width="157" height="30"/>
+                                                        <state key="normal" title="Thêm nhóm chi"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="height" secondItem="zjU-FZ-icl" secondAttribute="height" id="1Be-Xe-eoC"/>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="centerX" secondItem="zjU-FZ-icl" secondAttribute="centerX" id="32z-3n-T6k"/>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="centerY" secondItem="zjU-FZ-icl" secondAttribute="centerY" id="RvB-Q2-0Br"/>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="width" secondItem="zjU-FZ-icl" secondAttribute="width" multiplier="4/5" id="VWf-1J-NLA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-U1-Rtt">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-R4-iNU">
+                                                        <rect key="frame" x="20" y="0.0" width="157" height="30"/>
+                                                        <state key="normal" title="Thêm nhóm Thu"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="centerX" secondItem="5Rd-U1-Rtt" secondAttribute="centerX" id="2nx-2P-Xqh"/>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="centerY" secondItem="5Rd-U1-Rtt" secondAttribute="centerY" id="AXb-Zt-P3V"/>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="width" secondItem="5Rd-U1-Rtt" secondAttribute="width" multiplier="4/5" id="ao6-jF-3Br"/>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="height" secondItem="5Rd-U1-Rtt" secondAttribute="height" id="jbA-d9-WAb"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.9253461959" green="1" blue="0.8545392772" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="5Rd-U1-Rtt" secondAttribute="bottom" id="7An-Y2-x1n"/>
+                                            <constraint firstItem="zjU-FZ-icl" firstAttribute="leading" secondItem="5Rd-U1-Rtt" secondAttribute="trailing" id="H2w-fY-Fwe"/>
+                                            <constraint firstAttribute="trailing" secondItem="zjU-FZ-icl" secondAttribute="trailing" id="UAQ-RJ-xjO"/>
+                                            <constraint firstAttribute="height" constant="30" id="Ygz-EW-YKD"/>
+                                            <constraint firstItem="5Rd-U1-Rtt" firstAttribute="top" secondItem="bt3-lc-abt" secondAttribute="top" id="erl-1f-pst"/>
+                                            <constraint firstItem="zjU-FZ-icl" firstAttribute="width" secondItem="bt3-lc-abt" secondAttribute="width" multiplier="1/2" id="gar-4h-Q1k"/>
+                                            <constraint firstItem="zjU-FZ-icl" firstAttribute="height" secondItem="bt3-lc-abt" secondAttribute="height" id="wYn-GY-CmK"/>
+                                            <constraint firstItem="5Rd-U1-Rtt" firstAttribute="leading" secondItem="bt3-lc-abt" secondAttribute="leading" id="xg7-yI-BBW"/>
+                                            <constraint firstItem="zjU-FZ-icl" firstAttribute="centerY" secondItem="bt3-lc-abt" secondAttribute="centerY" id="xym-Lc-Jxl"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="178" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="whK-Uv-Qu8" userLabel="tbl_view_themkhoanthu">
+                                        <rect key="frame" x="10" y="70" width="394" height="616"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="VwW-q7-hfj">
+                                                <rect key="frame" x="0.0" y="28" width="394" height="178"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VwW-q7-hfj" id="ufu-7s-huh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="177"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhóm Thu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elC-fg-795">
+                                                            <rect key="frame" x="8" y="8" width="114" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="114" id="4yn-Ta-Nzv"/>
+                                                                <constraint firstAttribute="height" constant="21" id="gGr-zW-baD"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.67270611702127658" green="0.29382468486176228" blue="0.16198835129183381" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xăng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-CG-WEL">
+                                                            <rect key="frame" x="26" y="32" width="90" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="22" id="Tad-cM-eEH"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="cxO-CG-WEL" firstAttribute="top" secondItem="elC-fg-795" secondAttribute="bottom" constant="3" id="4vN-lc-vEs"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="cxO-CG-WEL" secondAttribute="trailing" constant="270" id="FAw-jX-X8G"/>
+                                                        <constraint firstItem="cxO-CG-WEL" firstAttribute="leading" secondItem="ufu-7s-huh" secondAttribute="leadingMargin" constant="18" id="YVh-Pi-FFK"/>
+                                                        <constraint firstItem="elC-fg-795" firstAttribute="top" secondItem="ufu-7s-huh" secondAttribute="topMargin" id="ZoY-08-Sey"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="elC-fg-795" secondAttribute="trailing" constant="264" id="eh2-l3-UZT"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qmu-BM-Dzl" secondAttribute="trailing" constant="10" id="IlC-zY-UxQ"/>
+                                    <constraint firstItem="whK-Uv-Qu8" firstAttribute="leading" secondItem="67p-2b-uNi" secondAttribute="leading" constant="10" id="JgN-II-Nx0"/>
+                                    <constraint firstItem="qmu-BM-Dzl" firstAttribute="centerY" secondItem="UKR-7z-BHc" secondAttribute="centerY" id="O9F-kS-HSo"/>
+                                    <constraint firstItem="bt3-lc-abt" firstAttribute="leading" secondItem="67p-2b-uNi" secondAttribute="leading" constant="10" id="QAz-lc-25M"/>
+                                    <constraint firstItem="qmu-BM-Dzl" firstAttribute="top" secondItem="67p-2b-uNi" secondAttribute="top" constant="20" id="WAT-nx-ubv"/>
+                                    <constraint firstItem="bt3-lc-abt" firstAttribute="top" secondItem="whK-Uv-Qu8" secondAttribute="bottom" id="aVU-zw-Bdq"/>
+                                    <constraint firstItem="UKR-7z-BHc" firstAttribute="leading" secondItem="67p-2b-uNi" secondAttribute="leading" constant="10" id="gfq-ng-0pi"/>
+                                    <constraint firstItem="UKR-7z-BHc" firstAttribute="top" secondItem="67p-2b-uNi" secondAttribute="top" constant="22" id="kjF-oG-9YP"/>
+                                    <constraint firstItem="qmu-BM-Dzl" firstAttribute="leading" secondItem="UKR-7z-BHc" secondAttribute="trailing" id="kld-Rh-Ubk"/>
+                                    <constraint firstAttribute="trailing" secondItem="bt3-lc-abt" secondAttribute="trailing" constant="10" id="oCw-hd-wuF"/>
+                                    <constraint firstAttribute="trailing" secondItem="whK-Uv-Qu8" secondAttribute="trailing" constant="10" id="pIN-E6-WRy"/>
+                                    <constraint firstAttribute="bottom" secondItem="bt3-lc-abt" secondAttribute="bottom" id="pdO-kU-7pK"/>
+                                    <constraint firstItem="whK-Uv-Qu8" firstAttribute="top" secondItem="qmu-BM-Dzl" secondAttribute="bottom" constant="20" id="yvR-BE-c9h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="67p-2b-uNi" secondAttribute="trailing" id="G7a-Iz-VUD"/>
+                            <constraint firstItem="67p-2b-uNi" firstAttribute="leading" secondItem="e0U-KI-Kig" secondAttribute="leading" id="L8C-Le-J7x"/>
+                            <constraint firstItem="67p-2b-uNi" firstAttribute="top" secondItem="yvT-kf-ynI" secondAttribute="bottom" id="s8C-2i-9SO"/>
+                            <constraint firstItem="yhQ-v7-gpV" firstAttribute="top" secondItem="67p-2b-uNi" secondAttribute="bottom" id="uc0-9p-M5Y"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDL-3l-Y7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="1437"/>
         </scene>
         <!--Chi tiet Thongke-->
         <scene sceneID="MfB-AB-wiE">
@@ -1300,7 +1470,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eGs-WI-Ys5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ngo-Rh-E6l">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tháng" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pil-hJ-0OR">
@@ -1314,7 +1484,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2E-SW-cjM" userLabel="DATE_SHOW" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="295" y="25" width="10" height="30"/>
+                                <rect key="frame" x="155" y="25" width="10" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Y2H-Og-7SQ"/>
                                     <constraint firstAttribute="width" constant="10" id="o4B-ne-IHj"/>
@@ -1324,7 +1494,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6R-vk-1wl" userLabel="Menu" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="540" y="25" width="30" height="30"/>
+                                <rect key="frame" x="264" y="25" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Yf4-DM-hWu"/>
                                     <constraint firstAttribute="height" constant="30" id="y1V-mG-DGW"/>
@@ -1335,7 +1505,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tV1-Rq-v7H" customClass="button" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="25" width="50" height="25"/>
+                                <rect key="frame" x="16" y="25" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="OLC-9a-dce"/>
                                     <constraint firstAttribute="height" constant="25" id="ook-u8-oZ4"/>
@@ -1346,7 +1516,7 @@
                                 </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oSl-BW-TmN">
-                                <rect key="frame" x="260" y="60" width="94" height="29"/>
+                                <rect key="frame" x="120" y="60" width="94" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="L6a-tQ-DGY"/>
                                     <constraint firstAttribute="width" constant="80" id="ouz-sQ-HoU"/>
@@ -1356,7 +1526,7 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xm-Qe-xRv" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="100" width="130" height="30"/>
+                                <rect key="frame" x="16" y="100" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="fY6-hd-GMo"/>
                                     <constraint firstAttribute="height" constant="30" id="skj-Tb-eLi"/>
@@ -1374,7 +1544,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz1-92-DFS" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="450" y="100" width="130" height="30"/>
+                                <rect key="frame" x="174" y="100" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="cMj-aq-H5B"/>
                                     <constraint firstAttribute="height" constant="30" id="zoh-nY-nDt"/>
@@ -1392,7 +1562,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DU THANG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyb-l6-T0L" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="20" y="135" width="130" height="30"/>
+                                <rect key="frame" x="16" y="135" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="esN-7n-eYn"/>
                                     <constraint firstAttribute="width" constant="130" id="gmR-28-tTH"/>
@@ -1410,7 +1580,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DU TONG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVp-jZ-IvJ" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="450" y="140" width="130" height="30"/>
+                                <rect key="frame" x="174" y="140" width="130" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="num-dz-NfQ"/>
                                     <constraint firstAttribute="width" constant="130" id="t5G-0L-gGK"/>
@@ -1428,14 +1598,14 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="De1-WV-dvT">
-                                <rect key="frame" x="20" y="204" width="560" height="250"/>
+                                <rect key="frame" x="16" y="204" width="288" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="cPd-Hn-Ojy"/>
                                 </constraints>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTb-ha-8Rt" customClass="label" customModule="MyWallet" customModuleProvider="target">
-                                <rect key="frame" x="305" y="25" width="100" height="30"/>
+                                <rect key="frame" x="165" y="25" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5vh-bS-LoN"/>
                                     <constraint firstAttribute="width" constant="100" id="T5V-um-4f4"/>
@@ -1473,6 +1643,7 @@
                             <constraint firstItem="z2E-SW-cjM" firstAttribute="leading" secondItem="pil-hJ-0OR" secondAttribute="trailing" id="rKc-of-sJf"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="DATE" destination="FTb-ha-8Rt" id="ydy-iU-L8B"/>
                         <outlet property="stepper" destination="oSl-BW-TmN" id="6uc-qf-1Iy"/>
@@ -1481,7 +1652,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nle-78-T8u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="835"/>
+            <point key="canvasLocation" x="-872" y="800"/>
         </scene>
     </scenes>
     <resources>
@@ -1492,9 +1663,9 @@
         <image name="icon5d_back.png" width="450" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DEi-7c-YLr"/>
-        <segue reference="9Vy-69-mbK"/>
+        <segue reference="PT2-hM-Jxg"/>
+        <segue reference="n9U-yg-93i"/>
         <segue reference="lRT-ZZ-xyK"/>
-        <segue reference="iuz-jJ-Y58"/>
+        <segue reference="UOG-KM-LRq"/>
     </inferredMetricsTieBreakers>
 </document>
