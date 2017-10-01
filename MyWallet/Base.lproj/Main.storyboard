@@ -1583,7 +1583,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-U1-Rtt">
                                                 <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-R4-iNU">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-R4-iNU">
                                                         <rect key="frame" x="20" y="0.0" width="157" height="30"/>
                                                         <state key="normal" title="Thêm nhóm Thu">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1594,18 +1594,32 @@
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="width" secondItem="5Rd-U1-Rtt" secondAttribute="width" multiplier="4/5" id="YPJ-e9-a6E"/>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="centerY" secondItem="5Rd-U1-Rtt" secondAttribute="centerY" id="g2a-aJ-2VH"/>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="height" secondItem="5Rd-U1-Rtt" secondAttribute="height" id="hzK-ip-8Rh"/>
+                                                    <constraint firstItem="Vc6-R4-iNU" firstAttribute="centerX" secondItem="5Rd-U1-Rtt" secondAttribute="centerX" id="jmf-CO-dTp"/>
+                                                </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjC-AV-MXF">
-                                                <rect key="frame" x="217" y="0.0" width="157" height="30"/>
-                                                <state key="normal" title="Thêm nhóm chi">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="BtAddNhomChi:" destination="wKl-MK-1Xx" eventType="touchUpInside" id="5bZ-nk-KXT"/>
-                                                </connections>
-                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjU-FZ-icl">
                                                 <rect key="frame" x="197" y="0.0" width="197" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjC-AV-MXF">
+                                                        <rect key="frame" x="20" y="0.0" width="157" height="30"/>
+                                                        <state key="normal" title="Thêm nhóm chi">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="BtAddNhomChi:" destination="wKl-MK-1Xx" eventType="touchUpInside" id="5bZ-nk-KXT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="centerY" secondItem="zjU-FZ-icl" secondAttribute="centerY" id="Qf7-f9-qjZ"/>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="width" secondItem="zjU-FZ-icl" secondAttribute="width" multiplier="4/5" id="be4-Ht-vZq"/>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="height" secondItem="zjU-FZ-icl" secondAttribute="height" id="cqi-2s-LDa"/>
+                                                    <constraint firstItem="BjC-AV-MXF" firstAttribute="centerX" secondItem="zjU-FZ-icl" secondAttribute="centerX" id="jfl-CD-e4Z"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
