@@ -25,6 +25,9 @@
 		8A0952FB1F459DBF00A2F696 /* icon3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A0952FA1F459DBF00A2F696 /* icon3.jpg */; };
 		8A0952FD1F459DFA00A2F696 /* DangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0952FC1F459DFA00A2F696 /* DangNhap.swift */; };
 		8A0952FF1F45A45B00A2F696 /* textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0952FE1F45A45B00A2F696 /* textfield.swift */; };
+		8A1755791F7F3109001059C4 /* ThemNhom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1755781F7F3109001059C4 /* ThemNhom.swift */; };
+		8A17557B1F7F34FF001059C4 /* PopUPNhomThu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17557A1F7F34FF001059C4 /* PopUPNhomThu.swift */; };
+		8A17557D1F80B3F2001059C4 /* PopupNhomChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17557C1F80B3F2001059C4 /* PopupNhomChi.swift */; };
 		8A6FFE5C1F7A14C100C5A370 /* calendar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A6FFE5B1F7A14C100C5A370 /* calendar1.png */; };
 		8A6FFE5E1F7A150000C5A370 /* dropdown2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A6FFE5D1F7A150000C5A370 /* dropdown2.png */; };
 		8A71D4781F668E1A0036873E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A71D4771F668E1A0036873E /* Menu.swift */; };
@@ -81,6 +84,9 @@
 		8A0952FA1F459DBF00A2F696 /* icon3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon3.jpg; sourceTree = "<group>"; };
 		8A0952FC1F459DFA00A2F696 /* DangNhap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DangNhap.swift; sourceTree = "<group>"; };
 		8A0952FE1F45A45B00A2F696 /* textfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textfield.swift; sourceTree = "<group>"; };
+		8A1755781F7F3109001059C4 /* ThemNhom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemNhom.swift; sourceTree = "<group>"; };
+		8A17557A1F7F34FF001059C4 /* PopUPNhomThu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUPNhomThu.swift; sourceTree = "<group>"; };
+		8A17557C1F80B3F2001059C4 /* PopupNhomChi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupNhomChi.swift; sourceTree = "<group>"; };
 		8A6FFE5B1F7A14C100C5A370 /* calendar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar1.png; sourceTree = "<group>"; };
 		8A6FFE5D1F7A150000C5A370 /* dropdown2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdown2.png; sourceTree = "<group>"; };
 		8A71D4771F668E1A0036873E /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -152,11 +158,14 @@
 				8A0687ED1F469CC500879EBE /* Home.swift */,
 				8A71D4771F668E1A0036873E /* Menu.swift */,
 				8A0687EF1F469DC800879EBE /* Password.swift */,
+				8A1755781F7F3109001059C4 /* ThemNhom.swift */,
 				8A815B141F53D38D004D7627 /* ThemKhoanThu.swift */,
 				8A815B161F53D3AC004D7627 /* ThemKhoanChi.swift */,
 				8A771CA11F58F30F007BEEDF /* ThongKe.swift */,
 				8A771CA31F5919D2007BEEDF /* CellThongKe.swift */,
+				8A17557A1F7F34FF001059C4 /* PopUPNhomThu.swift */,
 				8AA0A7681F5E908F00C5183A /* Chi_tiet_Thongke.swift */,
+				8A17557C1F80B3F2001059C4 /* PopupNhomChi.swift */,
 				8A0952C81F45956800A2F696 /* Main.storyboard */,
 				8A0952CB1F45956800A2F696 /* Assets.xcassets */,
 				8A0952F91F459D9D00A2F696 /* images */,
@@ -358,13 +367,16 @@
 				8A0952C51F45956800A2F696 /* AppDelegate.swift in Sources */,
 				8A771CA21F58F30F007BEEDF /* ThongKe.swift in Sources */,
 				8A815B151F53D38D004D7627 /* ThemKhoanThu.swift in Sources */,
+				8A17557D1F80B3F2001059C4 /* PopupNhomChi.swift in Sources */,
 				8A0952F81F459CBC00A2F696 /* label.swift in Sources */,
 				8A0952F61F459C9300A2F696 /* button.swift in Sources */,
+				8A17557B1F7F34FF001059C4 /* PopUPNhomThu.swift in Sources */,
 				8A0687EE1F469CC500879EBE /* Home.swift in Sources */,
 				8A771CA41F5919D2007BEEDF /* CellThongKe.swift in Sources */,
 				8AA0A7691F5E908F00C5183A /* Chi_tiet_Thongke.swift in Sources */,
 				8A0687F81F4C2C3900879EBE /* MessageDK.swift in Sources */,
 				8A815B171F53D3AC004D7627 /* ThemKhoanChi.swift in Sources */,
+				8A1755791F7F3109001059C4 /* ThemNhom.swift in Sources */,
 				8A0952FF1F45A45B00A2F696 /* textfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
