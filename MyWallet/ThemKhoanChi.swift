@@ -26,37 +26,37 @@ class ThemKhoanChi: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func Tapped_backbutton(sender: AnyObject) {
-         dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func Tapped_backbutton(_ sender: AnyObject) {
+         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func dropdown_button(sender: AnyObject) {
-        var myActionSheet = UIAlertController(title: "CHỌN LOẠI CHI", message: nil, preferredStyle: .ActionSheet)
-        let rent_house = UIAlertAction(title: "Tiền nhà", style: UIAlertActionStyle.Default){
+    @IBAction func dropdown_button(_ sender: AnyObject) {
+        let myActionSheet = UIAlertController(title: "CHỌN LOẠI CHI", message: nil, preferredStyle: .actionSheet)
+        let rent_house = UIAlertAction(title: "Tiền nhà", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Tiền nhà"
         }
-        let money_food = UIAlertAction(title: "Tiền ăn", style: UIAlertActionStyle.Default){
+        let money_food = UIAlertAction(title: "Tiền ăn", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Tiền ăn"
         }
-        let tuition_fee = UIAlertAction(title: "Học phí", style: UIAlertActionStyle.Default){
+        let tuition_fee = UIAlertAction(title: "Học phí", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Học phí"
         }
-        let gasoline = UIAlertAction(title: "Xăng", style: UIAlertActionStyle.Default){
+        let gasoline = UIAlertAction(title: "Xăng", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Xăng"
         }
-        let others = UIAlertAction(title: "Mua sắm, cafe, du lịch", style: UIAlertActionStyle.Default){
+        let others = UIAlertAction(title: "Mua sắm, cafe, du lịch", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Mua sắm, cafe, du lịch"
         }
-        let luckymoney = UIAlertAction(title: "Tiền mừng các loại", style: UIAlertActionStyle.Default){
+        let luckymoney = UIAlertAction(title: "Tiền mừng các loại", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Tiền mừng các loại"
         }
-        let close = UIAlertAction(title: "Đóng", style: .Cancel, handler:{
+        let close = UIAlertAction(title: "Đóng", style: .cancel, handler:{
             action in print("close")
         })
         
@@ -68,7 +68,7 @@ class ThemKhoanChi: UIViewController {
         myActionSheet.addAction(luckymoney)
         myActionSheet.addAction(close)
         
-        presentViewController(myActionSheet, animated: true, completion: nil)
+        present(myActionSheet, animated: true, completion: nil)
     }
     
 

@@ -23,12 +23,12 @@ class Password: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var secondview:DangNhap = segue.destinationViewController as! DangNhap
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondview:DangNhap = segue.destination as! DangNhap
         secondview.TxtPass = Txt_Pass.text!
     }
-    @IBAction func Tap_buttonback(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func Tap_buttonback(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     /*

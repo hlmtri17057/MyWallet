@@ -19,7 +19,7 @@ class Chi_tiet_Thongke: UIViewController, UITableViewDelegate, UITableViewDataSo
     let s2data : [String] = ["row4","row5","row6"]
     
     var sectiondata : [ Int : [String]] = [:]
-    var dateFormatter = NSDateFormatter()
+    var dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +32,11 @@ class Chi_tiet_Thongke: UIViewController, UITableViewDelegate, UITableViewDataSo
         // Do any additional setup after loading the view.
         //Khai bao ngay thang
         self.dateFormatter.dateFormat = "MM/yyyy"
-        self.DATE.text = self.dateFormatter.stringFromDate(NSDate())
+        self.DATE.text = self.dateFormatter.string(from: Date())
         
-        let calendar = NSCalendar.currentCalendar()
-        let  components : NSDateComponents = calendar.components(.Month, fromDate: NSDate())
-        self.stepper.value = Double(components.month)
+        let calendar = Calendar.current
+        let  components : DateComponents = (calendar as NSCalendar).components(.month, from: Date())
+        self.stepper.value = Double(components.month!)
         
     }
     override func didReceiveMemoryWarning() {
@@ -44,29 +44,29 @@ class Chi_tiet_Thongke: UIViewController, UITableViewDelegate, UITableViewDataSo
         // Dispose of any resources that can be recreated.
     }
     // Chay stepper - +
-    @IBAction func Tap_stepper(sender: AnyObject) {
+    @IBAction func Tap_stepper(_ sender: AnyObject) {
         adjustDate()
     }
     // Tuy chinh Thang - +
     func  adjustDate() {
-        let date = self.dateFormatter.dateFromString(self.DATE.text!)
-        var components : NSDateComponents = NSCalendar.currentCalendar().components(.Month, fromDate: date!)
+        let date = self.dateFormatter.date(from: self.DATE.text!)
+        var components : DateComponents = (Calendar.current as NSCalendar).components(.month, from: date!)
         
-        var steppedDate: NSDate? = nil
-        if components.month > Int(self.stepper.value)
+        var steppedDate: Date? = nil
+        if components.month! > Int(self.stepper.value)
         {
-            steppedDate = NSCalendar.currentCalendar().dateByAddingUnit(.Month, value: -1, toDate: date!, options: .SearchBackwards)
+            steppedDate = (Calendar.current as NSCalendar).date(byAdding: .month, value: -1, to: date!, options: .searchBackwards)
         }
         else{
-            steppedDate = NSCalendar.currentCalendar().dateByAddingUnit(.Month, value: 1, toDate: date!, options: [])
+            steppedDate = (Calendar.current as NSCalendar).date(byAdding: .month, value: 1, to: date!, options: [])
         }
-        components = NSCalendar.currentCalendar().components(.Month, fromDate: steppedDate!)
-        self.stepper.value = Double(components.month)
-        self.DATE.text = self.dateFormatter.stringFromDate(steppedDate!)
+        components = (Calendar.current as NSCalendar).components(.month, from: steppedDate!)
+        self.stepper.value = Double(components.month!)
+        self.DATE.text = self.dateFormatter.string(from: steppedDate!)
     }
     
     //tabelview
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return (sectiondata[section]?.count)!
     }
@@ -74,10 +74,10 @@ class Chi_tiet_Thongke: UIViewController, UITableViewDelegate, UITableViewDataSo
     /* func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
      return sectionTitles[section]
      }*/
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let view = UIView()
-        view.backgroundColor = UIColor.greenColor()
+        view.backgroundColor = UIColor.green
         
         let label = UILabel()
         label.text = sectionTitles[section]
@@ -87,24 +87,24 @@ class Chi_tiet_Thongke: UIViewController, UITableViewDelegate, UITableViewDataSo
         return view
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 45
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return sectionTitles.count
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         cell?.textLabel?.text = sectiondata[indexPath.section]![indexPath.row]
         return cell!
     }
     
-    @IBAction func Tapped_buttonback(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func Tapped_buttonback(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     /*

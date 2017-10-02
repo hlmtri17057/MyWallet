@@ -23,8 +23,8 @@ class DangKy: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var secondview:MessageDK = segue.destinationViewController as! MessageDK
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondview:MessageDK = segue.destination as! MessageDK
         secondview.MessageInput = TaikhoanDK.text!
     }    /*
     // MARK: - Navigation

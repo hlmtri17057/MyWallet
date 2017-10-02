@@ -1,0 +1,6 @@
+framework module Pods_MyWalletTests {
+  umbrella header "Pods-MyWalletTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

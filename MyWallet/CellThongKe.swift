@@ -9,7 +9,7 @@
 import UIKit
 
 protocol TableViewCellDelegate {
-    func deleteRowAtIndex(index:Int)
+    func deleteRowAtIndex(_ index:Int)
 }
 
 
@@ -20,7 +20,7 @@ class CellThongKe: UITableViewCell {
     @IBOutlet weak var lb_chi: label!
     @IBOutlet weak var lb_duthang: label!
     
-    var index:NSIndexPath?
+    var index:IndexPath?
     var delegate:TableViewCellDelegate?
    // var delegate : UITableViewDelegate?
     override func awakeFromNib() {
@@ -28,7 +28,7 @@ class CellThongKe: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

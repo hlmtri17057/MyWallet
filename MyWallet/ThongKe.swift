@@ -27,22 +27,22 @@ class ThongKe: UIViewController , UITableViewDelegate, UITableViewDataSource, Ta
     }
     
 
-    @IBAction func Tap_backbutton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func Tap_backbutton(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     //tabelview
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
        return s1data.count
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return s1data.count
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("CellThongKe") as! CellThongKe
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellThongKe") as! CellThongKe
         
         /*cell.lb_chi.text = s1data[indexPath.row]
         cell.lb_date.text = s1data[indexPath.row]
@@ -61,8 +61,8 @@ class ThongKe: UIViewController , UITableViewDelegate, UITableViewDataSource, Ta
         return cell
     }
     
-    func deleteRowAtIndex(index: Int) {
-        s1data.removeAtIndex(index)
+    func deleteRowAtIndex(_ index: Int) {
+        s1data.remove(at: index)
         tableview.reloadData()
     }
     /*

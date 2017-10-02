@@ -24,14 +24,14 @@ class DangNhap: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func Tap_XacNhanDangNhap(sender: AnyObject) {
+    @IBAction func Tap_XacNhanDangNhap(_ sender: AnyObject) {
         guard TxtPassword.text != TxtPass else {
             //show message (run on UIViewController only)        
-            let alert = UIAlertController(title: "Alert", message: " Mật Khẩu Sai", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: { action in
+            let alert = UIAlertController(title: "Alert", message: " Mật Khẩu Sai", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: { action in
             print("Click of default button")
         }))
-            self.presentViewController(alert, animated: true, completion: nil);  return  }}
+            self.present(alert, animated: true, completion: nil);  return  }}
 
     /*
     // MARK: - Navigation

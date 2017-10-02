@@ -21,8 +21,8 @@ class Menu: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func Tapped_buttonback(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func Tapped_buttonback(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
 
 

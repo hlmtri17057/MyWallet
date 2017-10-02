@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import JTAppleCalendar
 
-class ThemKhoanThu: UIViewController {
+class ThemKhoanThu: UIViewController{
     @IBOutlet weak var Txt_Type: textfield!
     @IBOutlet weak var Txt_Money: UITextField!
     @IBOutlet weak var Txt_Calendar: UITextField!
@@ -25,23 +26,23 @@ class ThemKhoanThu: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func Tapped_backbutton(sender: AnyObject) {
-         dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func Tapped_backbutton(_ sender: AnyObject) {
+         dismiss(animated: true, completion: nil)
     }
-    @IBAction func Tapped_dropdown(sender: AnyObject) {
+    @IBAction func Tapped_dropdown(_ sender: AnyObject) {
         
-        var myActionSheet = UIAlertController(title: "CHỌN LOẠI THU", message: nil, preferredStyle: .ActionSheet)
+        let myActionSheet = UIAlertController(title: "CHỌN LOẠI THU", message: nil, preferredStyle: .actionSheet)
        
-        let salary = UIAlertAction(title: "Lương", style: UIAlertActionStyle.Default){
+        let salary = UIAlertAction(title: "Lương", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Lương"
         }
-        let bonus = UIAlertAction(title: "Thưởng", style: UIAlertActionStyle.Default){
+        let bonus = UIAlertAction(title: "Thưởng", style: UIAlertActionStyle.default){
             (ACTION) in
             self.Txt_Type.text = "Thưởng"
         }
         
-        let close = UIAlertAction(title: "Đóng", style: .Cancel, handler:{
+        let close = UIAlertAction(title: "Đóng", style: .cancel, handler:{
              action in print("close")
         })
         
@@ -49,9 +50,11 @@ class ThemKhoanThu: UIViewController {
         myActionSheet.addAction(bonus)
         myActionSheet.addAction(close)
         
-        presentViewController(myActionSheet, animated: true, completion: nil)
+        present(myActionSheet, animated: true, completion: nil)
     }
-
+    
+    //Chon lich
+   
     /*
     // MARK: - Navigation
 

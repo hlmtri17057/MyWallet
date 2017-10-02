@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWallet/Lich.swift"
+            timestampString = "528645507.040146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWallet/AppDelegate.swift"
+            timestampString = "528626934.259138"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.window.getter : Swift.Optional&lt;__ObjC.UIWindow&gt;"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626934.265344"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.window.setter : Swift.Optional&lt;__ObjC.UIWindow&gt;"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626934.268051"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.init () -&gt; MyWallet.AppDelegate"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626934.270272"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWallet/AppDelegate.swift"
+            timestampString = "528626934.899105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.__deallocating_deinit"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626934.903785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.init () -&gt; MyWallet.AppDelegate"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626934.906916"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.__allocating_init () -&gt; MyWallet.AppDelegate"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626934.909146"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626934.911342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWallet/AppDelegate.swift"
+            timestampString = "528626938.355179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.__deallocating_deinit"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626938.359077"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.init () -&gt; MyWallet.AppDelegate"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626938.362833"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyWallet.AppDelegate.__allocating_init () -&gt; MyWallet.AppDelegate"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626938.364576"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mayhotroremote/Documents/MyWallet/MyWallet/AppDelegate.swift"
+                  timestampString = "528626938.3662"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

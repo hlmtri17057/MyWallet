@@ -31,23 +31,23 @@ class ThemNhom: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func BtAddNhomThu(sender: AnyObject) {
-        let PopupView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("IdNhomThu") as! PopUPNhomThu
+    @IBAction func BtAddNhomThu(_ sender: AnyObject) {
+        let PopupView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IdNhomThu") as! PopUPNhomThu
         print("OK khoi tao thanh cong !")
         
         self.addChildViewController(PopupView)
         PopupView.view.frame = self.view.frame
         self.view.addSubview(PopupView.view)
-        PopupView.didMoveToParentViewController(self)
+        PopupView.didMove(toParentViewController: self)
     }
 
-    @IBAction func BtAddNhomChi(sender: AnyObject) {
-        let PopupView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("IdNhomChi") as! PopupNhomChi
+    @IBAction func BtAddNhomChi(_ sender: AnyObject) {
+        let PopupView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IdNhomChi") as! PopupNhomChi
         print("OK khoi tao thanh cong !")
         
         self.addChildViewController(PopupView)
         PopupView.view.frame = self.view.frame
         self.view.addSubview(PopupView.view)
-        PopupView.didMoveToParentViewController(self)
+        PopupView.didMove(toParentViewController: self)
     }
 }
